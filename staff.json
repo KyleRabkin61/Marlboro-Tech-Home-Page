@@ -1,0 +1,74 @@
+[
+    {
+        "name": "Mr. DellaPietro",
+        "yearsTaught": 13,
+        "Courses": [
+            "Intro to Wook Technology",
+            "Cabinetmaking",
+            "Adv. Cabinetmaking"
+        ],
+        "funFact": "He is a big Yankee fan.",
+        "img": "teacher-imgs/mr-dellapietro.JPG"
+    },
+    {
+        "name": "Mr. Kilgore",
+        "yearsTaught": 16,
+        "Courses": [
+            "Honors Advanced Web Design",
+            "H. NJIT IS219 Adv. Website Development",
+            "AP Computer Science Principles"
+        ],
+        "funFact": "He beat up Arnold Schwarzenegger.",
+        "img": "teacher-imgs/mr-kilgore.JPG"
+    },
+    {
+        "name": "Mrs. Leonard",
+        "yearsTaught": 19,
+        "Courses": [
+            "Graphic Design & Photography",
+            "Digital Media 2",
+            "AP Computer Science Principles",
+            "Honors Web Design"
+        ],
+        "funFact": "Her middle name is Mango.",
+        "img": "teacher-imgs/mrs-leonard.JPG"
+    },
+    {
+        "name": "Mrs. Ransom",
+        "yearsTaught": 7,
+        "Courses": [
+            "Architecture 1",
+            "Honors Architecture",
+            "Introduction to Woodworking"
+        ],
+        "funFact": "She obtained a Bachelor of Architecture degree from Philadelphia University.",
+        "img": "teacher-imgs/mrs-ransom.JPG"
+    },
+    {
+        "name": "Mrs. Russo",
+        "yearsTaught": 3,
+        "Courses": [
+            "Engineering Graphics 1",
+            "Honors Engineering Graphics 2",
+            "Adv. Cabinetmaking",
+            "Electronics 1",
+            "Honors Electronics 2",
+            "Graphic Design and Photography 1",
+            "Digital Media and Photo Design 2",
+            "Technological Systems & Design"
+        ],
+        "funFact": "She is a twin.",
+        "img": "teacher-imgs/mrs-russo.JPG"
+    },
+    {
+        "name": "Mr. Werntz",
+        "yearsTaught": 26,
+        "Courses": [
+            "Videos 1 and 2",
+            "Honors Innovation and Design",
+            "Graphic Design and Photography"
+        ],
+        "funFact": "He used to coach wrestling and was Coach Frankel's coach.",
+        "img": "teacher-imgs/mr-werntz.JPG"
+    }
+]

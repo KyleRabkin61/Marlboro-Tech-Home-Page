@@ -1,0 +1,102 @@
+/*
+Colors:
+blue: 113F75
+yellow: F4E04D
+for the buttons:  font-family: "Madimi One", serif;
+for long-blurbs:   font-family: "KoHo", serif;
+for titles above blurbs:   font-family: "Kaisei Decol", serif;
+big titles/navbar:  font-family: "Fira Sans Condensed", serif;
+*/
+
+.navcolor{
+    background-color: #113F75;
+}
+.nav-link{
+    color: white;
+    font-family: "Fira Sans Condensed", serif;
+    font-size: 25px;
+    font-weight: 700;
+    letter-spacing: 0.2px;
+    margin:0 30px;
+}
+.nav-link:hover{
+    color: #F4E04D;
+    
+}
+.active{
+    color: #F4E04D !important;
+  text-decoration: underline;
+}
+
+.container {
+    padding: 20px;
+}
+
+.row {
+    margin: 300px 0;
+}
+
+@media (min-width: 992px) {
+    .one {
+        width:clamp(300px, 50vw, 800px) !important;
+        position: relative;
+        left: 50px;
+    }
+    .two {
+        width: clamp(300px, 30vw, 500px) !important;
+        position: relative;
+        left: 50px;
+    }
+    .three {
+        width:clamp(300px, 50vw, 800px) !important;
+        position: relative;
+        right: 50px;
+    }
+    .four {
+        width: clamp(300px, 30vw, 500px) !important;
+        position: relative;
+        right: 50px;
+    }
+}
+.one {
+    height: 600px;
+    width: clamp(600px, 70vw, 900px);
+    background: url(https://picsum.photos/600/700);
+    z-index: 1;
+}
+.two {
+    height: clamp(300px, 30vw, 500px);
+    width: clamp(350px, 45vw, 500px);
+    background: #113F75;
+    border: #F4E04D 5px solid;
+    z-index: 2;
+    margin: -100px;
+    box-shadow: black 0px 2px 4px 0px, rgb(64, 64, 64) 0px 2px 16px 0px;
+}
+
+.three {
+    height: 600px;
+    width: clamp(600px, 70vw, 900px);
+    background: url(https://picsum.photos/600/700);
+    z-index: 1;
+}
+.four {
+    height: clamp(300px, 30vw, 500px);
+    width: clamp(350px, 40vw, 500px);
+    background: #113F75;
+    border: #F4E04D 5px solid;
+    z-index: 2;
+    margin: -100px;
+    box-shadow: black 0px 2px 4px 0px, rgb(64, 64, 64) 0px 2px 16px 0px;
+}
+
+.info-title {
+    color: white;
+    margin-top: 30px;
+    font-family: "Kaisei Decol", serif;
+}
+.info-section {
+    background: white;
+    margin: 20px;
+    font-family: "KoHo", serif;
+}
