@@ -20,29 +20,31 @@
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg navcolor">
+    <nav class="navbar navbar-expand-lg">
         <div class="container-fluid">
             <a class="navbar-brand" href="index.html">
                 <img src="imgs/tech-ed.png" alt="Bootstrap" width="85" height="85">
             </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-                aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
+            <button class="navbar-toggler collapsed d-flex d-lg-none flex-column justify-content-around" type="button"
+                data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="toggler-icon top-bar"></span>
+                <span class="toggler-icon middle-bar"></span>
+                <span class="toggler-icon bottom-bar"></span>
             </button>
             <div class="text-center collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
                     <li class="nav-item">
                         <a class="nav-link active" aria-current="page" href="#">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" aria-current="page" href="#">Classrooms</a>
+                        <a class="nav-link" aria-current="page" href="room.html">Classrooms</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" aria-current="page" href="#">Courses and Clubs</a>
+                        <a class="nav-link" aria-current="page" href="courses.html">Courses and Clubs</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" aria-current="page" href="#">Staff</a>
+                        <a class="nav-link" aria-current="page" href="staff.html">Staff</a>
                     </li>
 
 
@@ -53,8 +55,15 @@
     </nav>
 
     <div class="container mt-5">
-        <!-- start of info boxes -->
-        <div class="row d-flex justify-content-center align-items-center">
+        <!-- header -->
+         <div class="row">
+            <div class="col-12 index-header">
+
+            </div>
+         </div>
+
+        <!-- info boxes -->
+        <div class="row info-row d-flex justify-content-center align-items-center">
 
             <div class="what-image col-12 order-lg-2 col-lg-6">
             </div>
@@ -68,7 +77,7 @@
                 <button class="btn">Click here to explore the courses!</button>
             </div>
         </div>
-        <div class="row d-flex justify-content-center align-items-center">
+        <div class="row info-row d-flex justify-content-center align-items-center">
 
             <div class="offer-image col-12 col-lg-6"></div>
             <div class="offer-text col-12 col-lg-6 d-flex flex-column justify-content-center align-items-center">
@@ -81,7 +90,7 @@
             </div>
 
         </div>
-        <div class="row d-flex justify-content-center align-items-center">
+        <div class="row info-row d-flex justify-content-center align-items-center">
 
             <div class="staff-image col-12 order-lg-2 col-lg-6"></div>
             <div class="staff-text col-12 order-lg-1 col-lg-6 d-flex flex-column justify-content-center align-items-center">
@@ -94,6 +103,9 @@
             </div>
         </div>
     </div>
+
+    <!-- back-to-top here -->
+    <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
 
     <footer>
         <!-- place footer here -->
