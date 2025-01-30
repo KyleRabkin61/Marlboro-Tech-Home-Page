@@ -24,6 +24,7 @@ screen sizes:
 
 .navbar {
     background-color: #113F75;
+    border-bottom: #F4E04D 5px solid;
 }
 
 .nav-link {
@@ -129,6 +130,7 @@ screen sizes:
     width: clamp(600px, 70vw, 900px);
     height: 600px;
     background: url(https://picsum.photos/600/700);
+    margin-top: 100px;
 }
 
 .header {
@@ -221,20 +223,8 @@ screen sizes:
 
 /* staff page css */
 
-.blue {
-    border-radius: 100%;
-    width: 300px;
-    height: 300px;
-    border: #113F75 5px solid;
-    margin: 20px;
-}
-
-.yellow {
-    border-radius: 100%;
-    width: 300px;
-    height: 300px;
-    border: #F4E04D 5px solid;
-    margin: 20px;
+.staff-row {
+    margin-top: 100px;
 }
 
 .mr-d {
@@ -245,8 +235,9 @@ screen sizes:
     border-radius: 100%;
     width: 300px;
     height: 300px;
-    border: #113F75 5px solid;
+    border: #F4E04D 6px solid;
     margin: 20px auto;
+    box-shadow: #113F75 0px 8px 8px 0px, #113F75 9px 4px 16px 0px;
 }
 
 .mr-k {
@@ -257,8 +248,9 @@ screen sizes:
     border-radius: 100%;
     width: 300px;
     height: 300px;
-    border: #F4E04D 5px solid;
+    border: #F4E04D 6px solid;
     margin: 20px auto;
+    box-shadow: #113F75 0px 8px 8px 0px, #113F75 9px 4px 16px 0px;
 }
 
 .mrs-l {
@@ -269,8 +261,9 @@ screen sizes:
     border-radius: 100%;
     width: 300px;
     height: 300px;
-    border: #113F75 5px solid;
+    border: #F4E04D 6px solid;
     margin: 20px auto;
+    box-shadow: #113F75 0px 8px 8px 0px, #113F75 9px 4px 16px 0px;
 }
 
 .mrs-ra {
@@ -281,8 +274,9 @@ screen sizes:
     border-radius: 100%;
     width: 300px;
     height: 300px;
-    border: #F4E04D 5px solid;
+    border: #F4E04D 6px solid;
     margin: 20px auto;
+    box-shadow: #113F75 0px 8px 8px 0px, #113F75 9px 4px 16px 0px;
 }
 
 .mrs-ru {
@@ -293,8 +287,9 @@ screen sizes:
     border-radius: 100%;
     width: 300px;
     height: 300px;
-    border: #113F75 5px solid;
+    border: #F4E04D 6px solid;
     margin: 20px auto;
+    box-shadow: #113F75 0px 8px 8px 0px, #113F75 9px 4px 16px 0px;
 }
 
 .mr-w {
@@ -305,8 +300,9 @@ screen sizes:
     border-radius: 100%;
     width: 300px;
     height: 300px;
-    border: #F4E04D 5px solid;
+    border: #F4E04D 6px solid;
     margin: 20px auto;
+    box-shadow: #113F75 0px 8px 8px 0px, #113F75 9px 4px 16px 0px;
 }
 
 .mrs-a {
@@ -317,8 +313,9 @@ screen sizes:
     border-radius: 100%;
     width: 300px;
     height: 300px;
-    border: #113F75 5px solid;
+    border: #F4E04D 6px solid;
     margin: 20px auto;
+    box-shadow: #113F75 0px 8px 8px 0px, #113F75 9px 4px 16px 0px;
 }
 
 
