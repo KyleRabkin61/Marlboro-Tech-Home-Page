@@ -14,6 +14,9 @@
     <!-- css link -->
     <link rel="stylesheet" href="style.css">
 
+    <!-- Javascript Framework (e.g., vue.js) -->
+	<script src="https://unpkg.com/vue@3.0.11/dist/vue.global.js"></script>
+
     <!-- google font links -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -58,11 +61,20 @@
         </div>
     </nav>
 
-    <div class="container mt-5">
+    <div id="vue_app" class="container mt-5">
 
         <!-- staff -->
-         <div class="row staff-row d-flex justify-content-center align-items-center">
-            <div class="col-12 col-md-6 col-xl-4 d-flex flex-column justify-content-center">
+        <div class="row staff-row d-flex justify-content-center align-items-center">
+            <div class="col-12 col-md-6 col-xl-4 d-flex flex-column justify-content-center" v-for="(teacher, index) in staff" :key="teacher.id">
+                <div class="col-12 col-md-6 col-xl-4 d-flex flex-column justify-content-center">
+                    <div :style="" class="teacher-photo">
+                        
+                    </div>
+                    <h1 class="text-center teacher-name">{{ staff[index].name }}
+                    </h1>
+                </div>
+            </div>
+            <!-- <div class="col-12 col-md-6 col-xl-4 d-flex flex-column justify-content-center">
                 <div class="mr-d">
                 </div>
                 <h1 class="text-center teacher-name">Mr. Dellapietro</h1>
@@ -103,8 +115,8 @@
                 </div>
                 <h1 class="text-center teacher-name">Mrs. Andreacci</h1>
                 <p class="email text-center">eandreacci@frhsd.com</p>
-            </div>
-         </div>
+            </div> -->
+        </div>
     </div>
 
     <!-- back-to-top here -->

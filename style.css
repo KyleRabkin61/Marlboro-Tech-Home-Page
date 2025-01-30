@@ -306,7 +306,7 @@ screen sizes:
 }
 
 .mrs-a {
-    background: url(https://picsum.photos/300/300);
+    background: url(teacher-imgs/mrs-andreacci.JPG);
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
@@ -422,18 +422,6 @@ footer {
 
 /* media for different screen sizes */
 
-/* medium width */
-
-@media (min-width: 768px) {
-    .mrs-l {
-        border: #F4E04D 5px solid !important;
-    }
-
-    .mrs-ra {
-        border: #113F75 5px solid !important;
-    }
-}
-
 /* large width */
 
 @media (min-width: 992px) {
@@ -486,16 +474,4 @@ footer {
     }
 
 
-}
-
-/* extra large width (for contact page for some reason)*/
-
-@media (min-width: 1200px) {
-    .mrs-l {
-        border: #113F75 5px solid !important;
-    }
-
-    .mrs-ra {
-        border: #F4E04D 5px solid !important;
-    }
 }
