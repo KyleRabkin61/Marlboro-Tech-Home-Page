@@ -1,11 +1,23 @@
 /*
-Colors:
-blue: 113F75
-yellow: F4E04D
-for the buttons:  font-family: "Madimi One", serif;
-for long-blurbs:   font-family: "KoHo", serif;
-for titles above blurbs:   font-family: "Kaisei Decol", serif;
-big titles/navbar:  font-family: "Fira Sans Condensed", serif;
+colors:
+
+    blue: 113F75
+    yellow: F4E04D
+
+fonts:
+
+    for the buttons:  font-family: "Madimi One", serif;
+    for long-blurbs:   font-family: "KoHo", serif;
+    for titles above blurbs:   font-family: "Kaisei Decol", serif;
+    big titles/navbar:  font-family: "Fira Sans Condensed", serif;
+
+screen sizes:
+
+    small: 576px
+    medium: 768px
+    large: 992px
+    extra large: 1200px
+    extra extra large: 1400px
 */
 
 /* navbar css */
@@ -234,7 +246,7 @@ big titles/navbar:  font-family: "Fira Sans Condensed", serif;
     width: 300px;
     height: 300px;
     border: #113F75 5px solid;
-    margin: 20px;
+    margin: 20px auto;
 }
 
 .mr-k {
@@ -246,7 +258,7 @@ big titles/navbar:  font-family: "Fira Sans Condensed", serif;
     width: 300px;
     height: 300px;
     border: #F4E04D 5px solid;
-    margin: 20px;
+    margin: 20px auto;
 }
 
 .mrs-l {
@@ -258,7 +270,7 @@ big titles/navbar:  font-family: "Fira Sans Condensed", serif;
     width: 300px;
     height: 300px;
     border: #113F75 5px solid;
-    margin: 20px;
+    margin: 20px auto;
 }
 
 .mrs-ra {
@@ -270,7 +282,7 @@ big titles/navbar:  font-family: "Fira Sans Condensed", serif;
     width: 300px;
     height: 300px;
     border: #F4E04D 5px solid;
-    margin: 20px;
+    margin: 20px auto;
 }
 
 .mrs-ru {
@@ -282,7 +294,7 @@ big titles/navbar:  font-family: "Fira Sans Condensed", serif;
     width: 300px;
     height: 300px;
     border: #113F75 5px solid;
-    margin: 20px;
+    margin: 20px auto;
 }
 
 .mr-w {
@@ -294,11 +306,11 @@ big titles/navbar:  font-family: "Fira Sans Condensed", serif;
     width: 300px;
     height: 300px;
     border: #F4E04D 5px solid;
-    margin: 20px;
+    margin: 20px auto;
 }
 
 .mrs-a {
-    background: black;
+    background: url(https://picsum.photos/300/300);
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
@@ -306,7 +318,7 @@ big titles/navbar:  font-family: "Fira Sans Condensed", serif;
     width: 300px;
     height: 300px;
     border: #113F75 5px solid;
-    margin: 20px;
+    margin: 20px auto;
 }
 
 
@@ -370,6 +382,7 @@ footer {
     background-color: #113F75;
     color: #fff;
     margin-top: 75px;
+    padding: 20px 50px;
 }
 
 .footer-text {
@@ -409,6 +422,7 @@ footer {
     width: 150px;
     height: 150px;
 }
+
 /* media for different screen sizes */
 
 /* medium width */
@@ -417,6 +431,7 @@ footer {
     .mrs-l {
         border: #F4E04D 5px solid !important;
     }
+
     .mrs-ra {
         border: #113F75 5px solid !important;
     }
@@ -473,15 +488,16 @@ footer {
         height: 350px !important;
     }
 
-    
+
 }
 
-/* contact page large width */
+/* extra large width (for contact page for some reason)*/
 
 @media (min-width: 1200px) {
     .mrs-l {
         border: #113F75 5px solid !important;
     }
+
     .mrs-ra {
         border: #F4E04D 5px solid !important;
     }
