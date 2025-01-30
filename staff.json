@@ -2,7 +2,8 @@
     {
         "name": "Mr. DellaPietro",
         "yearsTaught": 13,
-        "Courses": [
+        "email": "",
+        "courses": [
             "Intro to Wook Technology",
             "Cabinetmaking",
             "Adv. Cabinetmaking"
@@ -13,7 +14,8 @@
     {
         "name": "Mr. Kilgore",
         "yearsTaught": 16,
-        "Courses": [
+        "email": "",
+        "courses": [
             "Honors Advanced Web Design",
             "H. NJIT IS219 Adv. Website Development",
             "AP Computer Science Principles"
@@ -24,7 +26,8 @@
     {
         "name": "Mrs. Leonard",
         "yearsTaught": 19,
-        "Courses": [
+        "email": "",
+        "courses": [
             "Graphic Design & Photography",
             "Digital Media 2",
             "AP Computer Science Principles",
@@ -36,7 +39,8 @@
     {
         "name": "Mrs. Ransom",
         "yearsTaught": 7,
-        "Courses": [
+        "email": "",
+        "courses": [
             "Architecture 1",
             "Honors Architecture",
             "Introduction to Woodworking"
@@ -47,7 +51,8 @@
     {
         "name": "Mrs. Russo",
         "yearsTaught": 3,
-        "Courses": [
+        "email": "",
+        "courses": [
             "Engineering Graphics 1",
             "Honors Engineering Graphics 2",
             "Adv. Cabinetmaking",
@@ -63,12 +68,23 @@
     {
         "name": "Mr. Werntz",
         "yearsTaught": 26,
-        "Courses": [
+        "email": "",
+        "courses": [
             "Videos 1 and 2",
             "Honors Innovation and Design",
             "Graphic Design and Photography"
         ],
         "funFact": "He used to coach wrestling and was Coach Frankel's coach.",
         "img": "teacher-imgs/mr-werntz.JPG"
+    },
+    {
+        "name": "Mr. Andreacci",
+        "yearsTaught": 28,
+        "email": "",
+        "courses": [
+            "Supervisor"
+        ],
+        "funFact": "She loves to go skiing",
+        "img": "teacher-imgs/mrs-andreacci.JPG"
     }
 ]
