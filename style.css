@@ -230,6 +230,11 @@ big titles/navbar:  font-family: "Fira Sans Condensed", serif;
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
+    border-radius: 100%;
+    width: 300px;
+    height: 300px;
+    border: #113F75 5px solid;
+    margin: 20px;
 }
 
 .mr-k {
@@ -237,6 +242,11 @@ big titles/navbar:  font-family: "Fira Sans Condensed", serif;
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
+    border-radius: 100%;
+    width: 300px;
+    height: 300px;
+    border: #F4E04D 5px solid;
+    margin: 20px;
 }
 
 .mrs-l {
@@ -244,6 +254,11 @@ big titles/navbar:  font-family: "Fira Sans Condensed", serif;
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
+    border-radius: 100%;
+    width: 300px;
+    height: 300px;
+    border: #113F75 5px solid;
+    margin: 20px;
 }
 
 .mrs-ra {
@@ -251,6 +266,11 @@ big titles/navbar:  font-family: "Fira Sans Condensed", serif;
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
+    border-radius: 100%;
+    width: 300px;
+    height: 300px;
+    border: #F4E04D 5px solid;
+    margin: 20px;
 }
 
 .mrs-ru {
@@ -258,6 +278,11 @@ big titles/navbar:  font-family: "Fira Sans Condensed", serif;
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
+    border-radius: 100%;
+    width: 300px;
+    height: 300px;
+    border: #113F75 5px solid;
+    margin: 20px;
 }
 
 .mr-w {
@@ -265,13 +290,23 @@ big titles/navbar:  font-family: "Fira Sans Condensed", serif;
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
+    border-radius: 100%;
+    width: 300px;
+    height: 300px;
+    border: #F4E04D 5px solid;
+    margin: 20px;
 }
 
 .mrs-a {
-    background: url(teacher-imgs/mr-dellapietro.JPG);
+    background: black;
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
+    border-radius: 100%;
+    width: 300px;
+    height: 300px;
+    border: #113F75 5px solid;
+    margin: 20px;
 }
 
 
@@ -376,6 +411,19 @@ footer {
 }
 /* media for different screen sizes */
 
+/* medium width */
+
+@media (min-width: 768px) {
+    .mrs-l {
+        border: #F4E04D 5px solid !important;
+    }
+    .mrs-ra {
+        border: #113F75 5px solid !important;
+    }
+}
+
+/* large width */
+
 @media (min-width: 992px) {
     .what-image {
         width: clamp(300px, 50vw, 800px) !important;
@@ -423,5 +471,18 @@ footer {
     .footer-image {
         width: 350px !important;
         height: 350px !important;
+    }
+
+    
+}
+
+/* contact page large width */
+
+@media (min-width: 1200px) {
+    .mrs-l {
+        border: #113F75 5px solid !important;
+    }
+    .mrs-ra {
+        border: #F4E04D 5px solid !important;
     }
 }
