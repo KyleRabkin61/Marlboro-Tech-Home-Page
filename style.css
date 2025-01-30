@@ -1,17 +1,30 @@
 /*
-Colors:
-blue: 113F75
-yellow: F4E04D
-for the buttons:  font-family: "Madimi One", serif;
-for long-blurbs:   font-family: "KoHo", serif;
-for titles above blurbs:   font-family: "Kaisei Decol", serif;
-big titles/navbar:  font-family: "Fira Sans Condensed", serif;
+colors:
+
+    blue: 113F75
+    yellow: F4E04D
+
+fonts:
+
+    for the buttons:  font-family: "Madimi One", serif;
+    for long-blurbs:   font-family: "KoHo", serif;
+    for titles above blurbs:   font-family: "Kaisei Decol", serif;
+    big titles/navbar:  font-family: "Fira Sans Condensed", serif;
+
+screen sizes:
+
+    small: 576px
+    medium: 768px
+    large: 992px
+    extra large: 1200px
+    extra extra large: 1400px
 */
 
 /* navbar css */
 
 .navbar {
     background-color: #113F75;
+    border-bottom: #F4E04D 5px solid;
 }
 
 .nav-link {
@@ -111,10 +124,13 @@ big titles/navbar:  font-family: "Fira Sans Condensed", serif;
     padding: 20px;
 }
 
+/* index header css */
+
 .index-header {
     width: clamp(600px, 70vw, 900px);
     height: 600px;
     background: url(https://picsum.photos/600/700);
+    margin-top: 100px;
 }
 
 .header {
@@ -130,53 +146,10 @@ big titles/navbar:  font-family: "Fira Sans Condensed", serif;
     font-size: clamp(35px, 1.5vw, 45px);
 }
 
+/* info css */
+
 .info-row {
     margin: 300px 0;
-}
-
-@media (min-width: 992px) {
-    .what-image {
-        width: clamp(300px, 50vw, 800px) !important;
-        position: relative;
-        left: 50px;
-    }
-
-    .what-text {
-        width: clamp(350px, 30vw, 500px) !important;
-        height: clamp(400px, 30vw, 500px) !important;
-        position: relative;
-        left: 50px;
-    }
-
-    .offer-image {
-        width: clamp(300px, 50vw, 800px) !important;
-        position: relative;
-        right: 50px;
-    }
-
-    .offer-text {
-        width: clamp(350px, 30vw, 500px) !important;
-        height: clamp(400px, 30vw, 500px) !important;
-        position: relative;
-        right: 50px;
-    }
-
-    .staff-image {
-        width: clamp(300px, 50vw, 800px) !important;
-        position: relative;
-        left: 50px;
-    }
-
-    .staff-text {
-        width: clamp(350px, 30vw, 500px) !important;
-        height: clamp(400px, 30vw, 500px) !important;
-        position: relative;
-        left: 50px;
-    }
-
-    .info-section {
-        font-size: clamp(15px, 1.2vw, 20px) !important;
-    }
 }
 
 .what-image {
@@ -248,11 +221,112 @@ big titles/navbar:  font-family: "Fira Sans Condensed", serif;
     font-family: "KoHo", serif;
 }
 
+/* staff page css */
+
+.staff-row {
+    margin-top: 100px;
+}
+
+.mr-d {
+    background: url(teacher-imgs/mr-dellapietro.JPG);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    border-radius: 100%;
+    width: 300px;
+    height: 300px;
+    border: #F4E04D 6px solid;
+    margin: 20px auto;
+    box-shadow: #113F75 0px 8px 8px 0px, #113F75 9px 4px 16px 0px;
+}
+
+.mr-k {
+    background: url(teacher-imgs/mr-kilgore.JPG);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    border-radius: 100%;
+    width: 300px;
+    height: 300px;
+    border: #F4E04D 6px solid;
+    margin: 20px auto;
+    box-shadow: #113F75 0px 8px 8px 0px, #113F75 9px 4px 16px 0px;
+}
+
+.mrs-l {
+    background: url(teacher-imgs/mrs-leonard.JPG);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    border-radius: 100%;
+    width: 300px;
+    height: 300px;
+    border: #F4E04D 6px solid;
+    margin: 20px auto;
+    box-shadow: #113F75 0px 8px 8px 0px, #113F75 9px 4px 16px 0px;
+}
+
+.mrs-ra {
+    background: url(teacher-imgs/mrs-ransom.JPG);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    border-radius: 100%;
+    width: 300px;
+    height: 300px;
+    border: #F4E04D 6px solid;
+    margin: 20px auto;
+    box-shadow: #113F75 0px 8px 8px 0px, #113F75 9px 4px 16px 0px;
+}
+
+.mrs-ru {
+    background: url(teacher-imgs/mrs-russo.JPG);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    border-radius: 100%;
+    width: 300px;
+    height: 300px;
+    border: #F4E04D 6px solid;
+    margin: 20px auto;
+    box-shadow: #113F75 0px 8px 8px 0px, #113F75 9px 4px 16px 0px;
+}
+
+.mr-w {
+    background: url(teacher-imgs/mr-werntz.JPG);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    border-radius: 100%;
+    width: 300px;
+    height: 300px;
+    border: #F4E04D 6px solid;
+    margin: 20px auto;
+    box-shadow: #113F75 0px 8px 8px 0px, #113F75 9px 4px 16px 0px;
+}
+
+.mrs-a {
+    background: url(https://picsum.photos/300/300);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    border-radius: 100%;
+    width: 300px;
+    height: 300px;
+    border: #F4E04D 6px solid;
+    margin: 20px auto;
+    box-shadow: #113F75 0px 8px 8px 0px, #113F75 9px 4px 16px 0px;
+}
+
+
+/* btn css */
+
 .btn {
     background-color: #F4E04D;
     font-family: "Madimi One", serif;
     color: #113F75;
     margin: 0 auto;
+    text-decoration: none;
 }
 
 .btn:hover {
@@ -265,9 +339,10 @@ big titles/navbar:  font-family: "Fira Sans Condensed", serif;
     background: #ffe520 !important;
     color: #113F75;
     box-shadow: none;
+    border: none;
 }
 
-/* back to top */
+/* back to top css*/
 
 #myBtn {
     display: none;
@@ -298,10 +373,13 @@ big titles/navbar:  font-family: "Fira Sans Condensed", serif;
     box-shadow: none;
 }
 
+/* footer css */
+
 footer {
     background-color: #113F75;
     color: #fff;
     margin-top: 75px;
+    padding: 20px 50px;
 }
 
 .footer-text {
@@ -310,17 +388,26 @@ footer {
     font-weight: 100 !important;
 }
 
-p {
+.footer-tech-ed {
     font-family: "Fira Sans Condensed", serif;
     font-weight: 900;
     margin: 0;
-    font-size: 40px;
+    font-size: clamp(40px, 4vw, 150px);
+}
+
+
+
+.place,
+.email,
+.phone {
+    font-size: clamp(20px, 2vw, 150px);
 }
 
 .link {
     color: #F4E04D !important;
     font-family: "Fira Sans Condensed", serif;
     transition: 0.2s;
+    font-size: clamp(15px, 1.5vw, 100px);
 }
 
 .link:hover {
@@ -329,5 +416,86 @@ p {
 }
 
 .footer-image {
-    width: 100px;
+    width: 150px;
+    height: 150px;
+}
+
+/* media for different screen sizes */
+
+/* medium width */
+
+@media (min-width: 768px) {
+    .mrs-l {
+        border: #F4E04D 5px solid !important;
+    }
+
+    .mrs-ra {
+        border: #113F75 5px solid !important;
+    }
+}
+
+/* large width */
+
+@media (min-width: 992px) {
+    .what-image {
+        width: clamp(300px, 50vw, 800px) !important;
+        position: relative;
+        left: 50px;
+    }
+
+    .what-text {
+        width: clamp(350px, 30vw, 500px) !important;
+        height: clamp(400px, 30vw, 500px) !important;
+        position: relative;
+        left: 50px;
+    }
+
+    .offer-image {
+        width: clamp(300px, 50vw, 800px) !important;
+        position: relative;
+        right: 50px;
+    }
+
+    .offer-text {
+        width: clamp(350px, 30vw, 500px) !important;
+        height: clamp(400px, 30vw, 500px) !important;
+        position: relative;
+        right: 50px;
+    }
+
+    .staff-image {
+        width: clamp(300px, 50vw, 800px) !important;
+        position: relative;
+        left: 50px;
+    }
+
+    .staff-text {
+        width: clamp(350px, 30vw, 500px) !important;
+        height: clamp(400px, 30vw, 500px) !important;
+        position: relative;
+        left: 50px;
+    }
+
+    .info-section {
+        font-size: clamp(15px, 1.2vw, 20px) !important;
+    }
+
+    .footer-image {
+        width: 350px !important;
+        height: 350px !important;
+    }
+
+
+}
+
+/* extra large width (for contact page for some reason)*/
+
+@media (min-width: 1200px) {
+    .mrs-l {
+        border: #113F75 5px solid !important;
+    }
+
+    .mrs-ra {
+        border: #F4E04D 5px solid !important;
+    }
 }
