@@ -42,7 +42,7 @@
             <div class="text-center collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        <a class="nav-link active" aria-current="page" href="index.html">Home</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" aria-current="page" href="room.html">Classrooms</a>
@@ -68,14 +68,14 @@
                 <div class="header m-3 d-flex align-items-center">
                     <h1 class="text-center header-title">Welcome to the <br>B-Wing in Marlboro High School</h1>
                 </div>
-                <button class="btn m-3">Click here to explore!</button>
+                <button class="btn m-3" onclick="window.location.href = '#what';">Click here to explore!</button>
             </div>
         </div>
 
         <!-- info boxes -->
         <div class="row info-row d-flex justify-content-center align-items-center">
 
-            <div class="what-image col-12 order-lg-2 col-lg-6">
+            <div class="what-image col-12 order-lg-2 col-lg-6" id="what">
             </div>
             <div
                 class="what-text col-12 order-lg-1 col-lg-6 d-flex flex-column justify-content-center align-items-center">
@@ -84,7 +84,8 @@
                     century electives. The B-wing is not just home to regular classrooms, as they contain resources and
                     materials that capitalize on real world exposure and allow for an effective learning experience.
                 </div>
-                <button class="btn">Click here to explore the classrooms!</button>
+                <button class="btn" onclick="window.location.href = 'room.html';">Click here to explore the
+                    classrooms!</button>
             </div>
         </div>
         <div class="row info-row d-flex justify-content-center align-items-center">
@@ -96,7 +97,8 @@
                     in the B-Wing or originate from the B-Wing. Most count towards the 21st century requirement, where
                     all offer unforgettable experiences inside and outside the classroom.
                 </div>
-                <button class="btn">Click here to explore the courses!</button>
+                <button class="btn" onclick="window.location.href = 'courses.html';">Click here to explore the
+                    courses!</button>
             </div>
 
         </div>
@@ -109,7 +111,8 @@
                     responsible teachers. They not only set up students for success, but also connect on a deeper level.
                     This presents students with a trusted adult and a true role model inside the classroom.
                 </div>
-                <button class="btn">Click here to explore the staff!</button>
+                <button class="btn" onclick="window.location.href = 'staff.html';">Click here to explore the
+                    staff!</button>
             </div>
         </div>
     </div>
@@ -119,27 +122,25 @@
 
     <!--  footer start -->
     <footer class="text-white">
-        <div class="container">
-            <div class="row">
-                <div class="col-12 col-lg-6 text-center text-lg-start footer-content">
-                    <p>&copy; Tech-Ed Department</p>
-                    <a href="https://marlboro.frhsd.com/" target="_blank" class="link">MHS School Website</a>
-                    <div class="place">
-                        <span class="fas fa-map-marker-alt address-icon"></span>
-                        <span class="footer-text">95 N Main St, Marlboro Township, NJ 07746</span>
-                    </div>
-                    <div class="email">
-                        <span class="fas fa-envelope address-icon"></span>
-                        <span class="footer-text">gkilgore@frhsd.com & sleonard@frhsd.com</span>
-                    </div>
-                    <div class="phone">
-                        <span class="fas fa-phone-alt address-icon"></span>
-                        <span class="footer-text">(732) 617-8393</span>
-                    </div>
+        <div class="row g-0 p-3 d-flex justify-content-center align-items-center">
+            <div class="col-12 col-lg-6 text-center text-lg-start footer-content">
+                <p class="footer-tech-ed">&copy; Tech-Ed Department</p>
+                <a href="https://marlboro.frhsd.com/" target="_blank" class="link">MHS School Website</a>
+                <div class="place">
+                    <span class="fas fa-map-marker-alt address-icon"></span>
+                    <span class="footer-text">95 N Main St, Marlboro Township, NJ 07746</span>
                 </div>
-                <div class="col-12 col-lg-6 d-flex justify-content-center">
-                    <img src="imgs/tech-ed.png" class="footer-image">
+                <div class="email">
+                    <span class="fas fa-envelope address-icon"></span>
+                    <span class="footer-text">gkilgore@frhsd.com & sleonard@frhsd.com</span>
                 </div>
+                <div class="phone">
+                    <span class="fas fa-phone-alt address-icon"></span>
+                    <span class="footer-text">(732) 617-8393</span>
+                </div>
+            </div>
+            <div class="col-12 col-lg-6 d-flex justify-content-center">
+                <img src="imgs/tech-ed.png" class="footer-image img-fluid">
             </div>
         </div>
     </footer>
