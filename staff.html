@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-    <title>Marlboro Tech Ed: B-Wing</title>
+    <title>Marlboro Tech Ed: The Staff</title>
     <!-- Required meta tags -->
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
@@ -16,6 +16,9 @@
 
     <!-- css link -->
     <link rel="stylesheet" href="style.css">
+
+    <!-- Vue Framework -->
+	<script src="https://unpkg.com/vue@3.0.11/dist/vue.global.js"></script>
 
     <!-- google font links -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -78,7 +81,7 @@
         <div class="row staff-row d-flex justify-content-center align-items-center">
             <div class="col-12 col-md-6 col-xl-4 d-flex flex-column justify-content-center"
                 v-for="(teacher, index) in staff" :key="teacher.id">
-                <img v-bind:src="staff[index].img" alt="" class="teacher-photo">
+                <img class="teacher-photo" v-bind:src="staff[index].img" id="teacherPhoto"></img>
                 <h1 class="text-center teacher-name mx-auto">{{ staff[index].name }}</h1>
                 <p class="teacher-email text-center">{{ staff[index].email }}</p>
             </div>
@@ -122,8 +125,16 @@
         integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
         crossorigin="anonymous"></script>
 
+    <!-- script.js -->
     <script src="script.js"></script>
+
+    <!-- staff.js -->
     <script type="text/javascript" src="staff.js"></script>
+
+    <!-- jquery link -->
+    <script src="https://code.jquery.com/jquery-3.7.1.js"
+        integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
+        crossorigin="anonymous"></script>
 </body>
 
 </html>
