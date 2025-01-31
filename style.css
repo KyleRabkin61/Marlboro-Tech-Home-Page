@@ -267,6 +267,10 @@ screen sizes:
     margin-top: 50px;
 }
 
+.teacher {
+    overflow: hidden;
+}
+
 .teacher-photo {
     background-repeat: no-repeat;
     background-position: center center;
@@ -277,14 +281,44 @@ screen sizes:
     border: #F4E04D 6px solid;
     margin: 20px auto;
     box-shadow: #113F75 0px 8px 8px 0px, #113F75 9px 4px 16px 0px;
+    position: relative;
+    display: block;
+}
+
+.staff-content {
+    width: 100%;
+    height: 100%;
+    top: -200px;
+    left: 0;
+    position: relative;
+    background: rgba(0,0,0,0.5);
+    opacity: 0;
+    transition: 0.5s;
+}
+
+.teacher-photo:hover .staff-content{
+    opacity: 1;
+    transition: 1s;
+}
+
+.staff-content > * {
+    transform:translateY(25px);
+    transition: transform 0.6s;
+}
+
+.hello {
+    font-size: 20px;
+    color: black;
 }
 
 .teacher-name {
     font-family: "Madimi One", serif;
+    color: black;
 }
 
 .teacher-email {
     font-family: "KoHo", serif;
+    color: black;
 }
 
 
@@ -531,4 +565,68 @@ footer {
     ::-webkit-scrollbar-thumb:hover {
       background: #a7982b; 
   }
-    
+
+
+  /* cards */
+
+.card {
+    width: 300px;
+    height: 375px;
+    height: 20vw;
+    min-height: 290px;
+    border-radius: 100%;
+    overflow: hidden;
+    border: 8px solid #fff;
+    position: relative;
+    transition: 1s;
+}
+.card-img {
+    width: 300px;
+    height: 375px;
+    object-fit: cover;
+    border-radius: 15px;
+    filter: brightness(0.7);
+}
+.card-body {
+    width: 100%;
+    height: 100%;
+    top: 0;
+    right: -100%;
+    position: absolute;
+    backdrop-filter: blur(5px);
+    border-radius: 15px;
+    color: #fff;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    transition: 1s;
+}
+.card:hover .card-body{
+    right: 0;
+    transition: 1s;
+}
+.card-title {
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-size: 1.8em;
+    font-weight: 500;
+}
+.card-info {
+    font-size: 1em;
+}
+.card-btn {
+    color: #fff;
+    background: #fdb44b;
+    width: 7em;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-size: 1em;
+    transition: 0.5s;
+}
+.card-btn:hover {
+    box-shadow: 8px 5px #00204a;
+    transition: 0.5s;
+}
