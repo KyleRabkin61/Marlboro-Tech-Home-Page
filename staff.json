@@ -2,7 +2,7 @@
     {
         "name": "Mr. DellaPietro",
         "yearsTaught": 13,
-        "email": "",
+        "email": "ddellapietro@frhsd.com",
         "courses": [
             "Intro to Wook Technology",
             "Cabinetmaking",
@@ -14,7 +14,7 @@
     {
         "name": "Mr. Kilgore",
         "yearsTaught": 16,
-        "email": "",
+        "email": "gkilgore@frhsd.com",
         "courses": [
             "Honors Advanced Web Design",
             "H. NJIT IS219 Adv. Website Development",
@@ -26,7 +26,7 @@
     {
         "name": "Mrs. Leonard",
         "yearsTaught": 19,
-        "email": "",
+        "email": "sleonard@frhsd.com",
         "courses": [
             "Graphic Design & Photography",
             "Digital Media 2",
@@ -39,7 +39,7 @@
     {
         "name": "Mrs. Ransom",
         "yearsTaught": 7,
-        "email": "",
+        "email": "lransom@frhsd.com",
         "courses": [
             "Architecture 1",
             "Honors Architecture",
@@ -51,7 +51,7 @@
     {
         "name": "Mrs. Russo",
         "yearsTaught": 3,
-        "email": "",
+        "email": "drusso@frhsd.com",
         "courses": [
             "Engineering Graphics 1",
             "Honors Engineering Graphics 2",
@@ -68,7 +68,7 @@
     {
         "name": "Mr. Werntz",
         "yearsTaught": 26,
-        "email": "",
+        "email": "wwerntz@frhsd.com",
         "courses": [
             "Videos 1 and 2",
             "Honors Innovation and Design",
@@ -80,7 +80,7 @@
     {
         "name": "Mr. Andreacci",
         "yearsTaught": 28,
-        "email": "",
+        "email": "eandreacci@frhsd.com",
         "courses": [
             "Supervisor"
         ],

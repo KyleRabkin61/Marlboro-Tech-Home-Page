@@ -137,6 +137,7 @@ screen sizes:
     width: 400px;
     height: 300px;
     background: #113F75;
+    border: #F4E04D 5px solid;
     padding: 20px;
 }
 
@@ -223,8 +224,46 @@ screen sizes:
 
 /* staff page css */
 
-.staff-row {
+.staff-header-row {
     margin-top: 100px;
+}
+
+.staff-header {
+    background: #113F75;
+    border: #F4E04D 5px solid;
+    border-radius: 6px;
+    height: 300px;
+    width: clamp(600px, 70vw, 800px);
+    z-index: 1;
+    box-shadow: #a5a9ae 0px 8px 8px 0px, #a5a9ae 9px 4px 16px 0px;
+}
+
+.staff-header-text {
+    font-size: clamp(60px, 3vw, 75px);
+    color: white;
+    font-family: "Kaisei Decol", serif;
+}
+
+.staff-hover-section {
+    height: 100px;
+    width: clamp(300px, 45vw, 400px);
+    background: #F4E04D;
+    border-radius: 6px;
+    z-index: 2;
+    position: relative;
+    bottom: 70px;
+    box-shadow: black 0px 2px 4px 0px, rgb(64, 64, 64) 0px 2px 16px 0px;
+   
+}
+
+.staff-hover-section-text {
+    font-size: 22px;
+    font-weight: 700;
+    font-family: "KoHo", serif;
+}
+
+.staff-row {
+    margin-top: 50px;
 }
 
 .teacher-photo {
@@ -237,6 +276,14 @@ screen sizes:
     border: #F4E04D 6px solid;
     margin: 20px auto;
     box-shadow: #113F75 0px 8px 8px 0px, #113F75 9px 4px 16px 0px;
+}
+
+.teacher-name {
+    font-family: "Madimi One", serif;
+}
+
+.teacher-email {
+    font-family: "KoHo", serif;
 }
 
 
@@ -422,10 +469,38 @@ footer {
 
 .description {
     font-family: "KoHo", serif;
-    font-size: 13px;
-
+    font-size: 14px;
 }
 
 .descriptioncroom {
     border: 8px solid #113F75;
+    height: 220px;
+}
+.classroom-header{
+    background: #113F75;
+    border: solid 5px #F4E04D;
+    height: 300px;
+    width: clamp(600px, 70vw, 900px);
+    margin-top: 100px;
+    box-shadow: #a5a9ae 0px 8px 8px 0px, #a5a9ae 9px 4px 16px 0px;
+}
+.info-title-class{
+    color: white;
+    font-family: "Kaisei Decol", serif;
+    font-size: clamp(60px, 3vw, 75px);
+    margin-bottom: 20px;
+}
+.course-header{
+    background: #113F75;
+    border: solid 5px #F4E04D;
+    height: 300px;
+    width: clamp(600px, 70vw, 900px);
+    margin-top: 100px;
+    box-shadow: #a5a9ae 0px 8px 8px 0px, #a5a9ae 9px 4px 16px 0px;
+}
+.info-title-course{
+    color: white;
+    font-family: "Kaisei Decol", serif;
+    font-size: clamp(60px, 3vw, 75px);
+    margin-bottom: 20px;
 }
