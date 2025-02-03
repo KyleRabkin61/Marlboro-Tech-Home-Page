@@ -4,6 +4,6 @@
         "teacher": ["Mr.Kilgore", "Mrs.Leonard"],
         "description": "uhhhh idk",
         "requirements": "21st century",
-        "image": "idk",
-    },
+        "image": "url(https://picsum.photos/600/700)"
+    }
 ]

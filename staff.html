@@ -84,10 +84,12 @@
                 <div class="card mx-auto">
                     <img class="teacher-photo" v-bind:src="staff[index].img" id="teacherPhoto">
                     <div class="card-body d-flex justify-content-center align-items-center flex-column">
-                        <h1>Courses:</h1>
+                        <h1 class="teacher-title">Courses:</h1>
                         <li v-for="(course, courseIndex) in staff[index].courses" :key="courseIndex" class="course-text text-center">
                             {{ course }}
-                          </li>
+                        </li> <br>
+                        <p class="teacher-years-taught text-center teacher-years">Years taught: {{ staff[index].yearsTaught }}</p>
+                        <p class="teacher-fun-fact text-center teacher-fun">Fun fact: {{ staff[index].funFact }}</p>
                             
                     </div>
                 </div>
@@ -100,13 +102,13 @@
                 <div class="card mx-auto">
                     <img class="teacher-photo" id="teacherPhoto" src="teacher-imgs/mrs-andreacci.JPG">
                     <div class="card-body d-flex justify-content-center align-items-center flex-column">
-                        <p>Years taught: 28</p>
-                        <p>Fun Fact: She loves to go skiing!</p>
+                       <p class="teacher-title"> Advisor </p>
+                        <p class="teacher-andd text-center">Years taught: <br> 28</p>
+                        <p class="teacher-and text-center">Fun Fact: <br> She loves to go skiing!</p>
                     </div>
                 </div>
                 <h1 class="text-center mt-3 teacher-name">Mrs. Andreacci</h1>
                 <p class="teacher-email text-center">eandreacci@frhsd.com</p>
-                <p class="text-center teacher-email">Supervisor</p>
             </div>
         </div>
     </div>
