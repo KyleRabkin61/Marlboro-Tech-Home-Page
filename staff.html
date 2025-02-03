@@ -18,7 +18,7 @@
     <link rel="stylesheet" href="style.css">
 
     <!-- Vue Framework -->
-	<script src="https://unpkg.com/vue@3.0.11/dist/vue.global.js"></script>
+    <script src="https://unpkg.com/vue@3.0.11/dist/vue.global.js"></script>
 
     <!-- google font links -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -79,29 +79,34 @@
 
         <!-- staff -->
         <div class="row staff-row d-flex justify-content-center align-items-center">
-            <div class="col-12 col-md-6 col-xl-4 d-flex justify-content-center teacher flex-column"
+            <div class="col-12 col-md-6 col-xl-4 my-3 d-flex justify-content-center teacher flex-column"
                 v-for="(teacher, index) in staff" :key="teacher.id">
-                <img class="teacher-photo" v-bind:src="staff[index].img" id="teacherPhoto">
-                <div class="staff-content d-flex justify-content-center align-items-center flex-column">
-                    <h1 class="hello">hello</h1>
-                    <h1 class="hello">hello</h1>
+                <div class="card mx-auto">
+                    <img class="teacher-photo" v-bind:src="staff[index].img" id="teacherPhoto">
+                    <div class="card-body d-flex justify-content-center align-items-center flex-column">
+                        <h1>Courses:</h1>
+                        <li v-for="(course, courseIndex) in staff[index].courses" :key="courseIndex" class="course-text text-center">
+                            {{ course }}
+                          </li>
+                            
+                    </div>
                 </div>
-                <h1 class="text-center teacher-name mx-auto">{{ staff[index].name }}</h1>
+                <h1 class="text-center mt-3 teacher-name">{{ staff[index].name }}</h1>
                 <p class="teacher-email text-center">{{ staff[index].email }}</p>
             </div>
         </div>
-
-        <div class="row">
-            <div class=" col-12 col-md-6 col-xl-4 my-5">
+        <div class="row staff-row d-flex justify-content-center align-items-center">
+            <div class="col-12 col-md-6 col-xl-4 my-3 d-flex justify-content-center teacher flex-column">
                 <div class="card mx-auto">
-                    <img src="teacher-imgs/mr-dellapietro.JPG" class="card-img" alt="">
+                    <img class="teacher-photo" id="teacherPhoto" src="teacher-imgs/mrs-andreacci.JPG">
                     <div class="card-body d-flex justify-content-center align-items-center flex-column">
-                        <h1 class="card-title yellow-underline text-center">Salaray/Job Outlook</h1>
-                        <p class="card-info text-center">To learn more information about the salary/job outlook, click on the button below!</p>
-                        <a href="salary.html text-center">
-                            <button class="card-btn">Click Here</button></a>
+                        <p>Years taught: 28</p>
+                        <p>Fun Fact: She loves to go skiing!</p>
                     </div>
                 </div>
+                <h1 class="text-center mt-3 teacher-name">Mrs. Andreacci</h1>
+                <p class="teacher-email text-center">eandreacci@frhsd.com</p>
+                <p class="text-center teacher-email">Supervisor</p>
             </div>
         </div>
     </div>
@@ -115,6 +120,7 @@
             <div class="col-12 col-lg-6 text-center text-lg-start footer-content">
                 <p class="footer-tech-ed">&copy; Tech-Ed Department</p>
                 <a href="https://marlboro.frhsd.com/" target="_blank" class="link">MHS School Website</a>
+
                 <div class="place">
                     <span class="fas fa-map-marker-alt address-icon"></span>
                     <span class="footer-text">95 N Main St, Marlboro Township, NJ 07746</span>
@@ -151,8 +157,7 @@
 
     <!-- jquery link -->
     <script src="https://code.jquery.com/jquery-3.7.1.js"
-        integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
-        crossorigin="anonymous"></script>
+        integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
 </body>
 
 </html>

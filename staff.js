@@ -1,6 +1,13 @@
 const vue_app = Vue.createApp({
-      // This automatically imports your movies.json file and puts it into
-      //   the variable: movies
+      data() {
+            return {
+                  courses: [
+                        "Intro to Wook Technology",
+                        "Cabinetmaking",
+                        "Adv. Cabinetmaking"
+                    ]
+            }
+      },
       created() {
             fetch('staff.json').then(response => response.json()).then(json => {
                   this.staff = json

@@ -267,19 +267,14 @@ screen sizes:
     margin-top: 50px;
 }
 
-.teacher {
-    overflow: hidden;
-}
-
 .teacher-photo {
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
     border-radius: 100%;
     width: 300px;
-    height: 375px;
+    height: 370px;
     border: #F4E04D 6px solid;
-    margin: 20px auto;
     box-shadow: #113F75 0px 8px 8px 0px, #113F75 9px 4px 16px 0px;
     position: relative;
     display: block;
@@ -294,21 +289,6 @@ screen sizes:
     background: rgba(0,0,0,0.5);
     opacity: 0;
     transition: 0.5s;
-}
-
-.teacher-photo:hover .staff-content{
-    opacity: 1;
-    transition: 1s;
-}
-
-.staff-content > * {
-    transform:translateY(25px);
-    transition: transform 0.6s;
-}
-
-.hello {
-    font-size: 20px;
-    color: black;
 }
 
 .teacher-name {
@@ -570,30 +550,20 @@ footer {
   /* cards */
 
 .card {
-    width: 300px;
-    height: 375px;
-    height: 20vw;
-    min-height: 290px;
     border-radius: 100%;
     overflow: hidden;
-    border: 8px solid #fff;
+    border: 8px solid #00204a;
     position: relative;
     transition: 1s;
 }
-.card-img {
-    width: 300px;
-    height: 375px;
-    object-fit: cover;
-    border-radius: 15px;
-    filter: brightness(0.7);
-}
+
 .card-body {
     width: 100%;
     height: 100%;
     top: 0;
     right: -100%;
     position: absolute;
-    backdrop-filter: blur(5px);
+    backdrop-filter: blur(10px);
     border-radius: 15px;
     color: #fff;
     padding: 30px;

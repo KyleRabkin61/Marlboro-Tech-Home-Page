@@ -16,7 +16,7 @@
         "yearsTaught": 16,
         "email": "gkilgore@frhsd.com",
         "courses": [
-            "Honors Advanced Web Design",
+            "H. Adv. Web Design",
             "H. NJIT IS219 Adv. Website Development",
             "AP Computer Science Principles"
         ],
@@ -31,7 +31,7 @@
             "Graphic Design & Photography",
             "Digital Media 2",
             "AP Computer Science Principles",
-            "Honors Web Design"
+            "H. Web Design"
         ],
         "funFact": "Her middle name is Mango.",
         "img": "teacher-imgs/mrs-leonard.JPG"
@@ -42,7 +42,7 @@
         "email": "lransom@frhsd.com",
         "courses": [
             "Architecture 1",
-            "Honors Architecture",
+            "H. Architecture",
             "Introduction to Woodworking"
         ],
         "funFact": "She obtained a Bachelor of Architecture degree from Philadelphia University.",
@@ -53,11 +53,9 @@
         "yearsTaught": 3,
         "email": "drusso@frhsd.com",
         "courses": [
-            "Engineering Graphics 1",
-            "Honors Engineering Graphics 2",
+            "Engineering Graphics 1 & 2",
             "Adv. Cabinetmaking",
-            "Electronics 1",
-            "Honors Electronics 2",
+            "Electronics 1 & 2",
             "Graphic Design and Photography 1",
             "Digital Media and Photo Design 2",
             "Technological Systems & Design"
@@ -71,20 +69,10 @@
         "email": "wwerntz@frhsd.com",
         "courses": [
             "Videos 1 and 2",
-            "Honors Innovation and Design",
+            "H. Innovation and Design",
             "Graphic Design and Photography"
         ],
         "funFact": "He used to coach wrestling and was Coach Frankel's coach.",
         "img": "teacher-imgs/mr-werntz.JPG"
-    },
-    {
-        "name": "Mrs. Andreacci",
-        "yearsTaught": 28,
-        "email": "eandreacci@frhsd.com",
-        "courses": [
-            "Supervisor"
-        ],
-        "funFact": "She loves to go skiing",
-        "img": "teacher-imgs/mrs-andreacci.JPG"
     }
 ]
