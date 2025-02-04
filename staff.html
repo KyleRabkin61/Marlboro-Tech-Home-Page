@@ -82,7 +82,7 @@
             <div class="col-12 col-md-6 col-xl-4 my-3 d-flex justify-content-center teacher flex-column"
                 v-for="(teacher, index) in staff" :key="teacher.id">
                 <div class="card mx-auto">
-                    <img class="teacher-photo" v-bind:src="staff[index].img" id="teacherPhoto">
+                    <img class="teacher-photo" v-bind:src="staff[index].img">
                     <div class="card-body d-flex justify-content-center align-items-center flex-column">
                         <h1 class="teacher-title">Courses:</h1>
                         <li v-for="(course, courseIndex) in staff[index].courses" :key="courseIndex" class="course-text text-center">

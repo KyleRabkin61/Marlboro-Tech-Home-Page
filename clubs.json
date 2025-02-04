@@ -1,0 +1,23 @@
+[
+    {
+        "class": "Technology Student Association",
+        "teacher": ["idk", "idk"],
+        "description": "idk",
+        "requirements": ["idk", "idk"],
+        "image": "url(https://picsum.photos/600/700)"
+    },
+    {
+        "class": "Mustang Morning Show",
+        "teacher": ["idk"],
+        "description": "idk",
+        "requirements": ["idk", "idk"],
+        "image": "url(https://picsum.photos/600/700)"
+    },
+    {
+        "class": "Coffee and Coding",
+        "teacher": ["idk"],
+        "description": " idk",
+        "requirements": ["idk", "idk"],
+        "image": "url(https://picsum.photos/600/700)"
+    }
+]

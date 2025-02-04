@@ -1,9 +1,65 @@
 [
     {
-        "course": "AP Comp Sci Principles",
-        "teacher": ["Mr.Kilgore", "Mrs.Leonard"],
-        "description": "uhhhh idk",
-        "requirements": "21st century",
-        "image": "url(https://picsum.photos/600/700)"
+        "class": "AP Comp Sci Principles",
+        "teacher": "Mr. Kilgore & Mrs. Leonard",
+        "description": "Students will develop computational thinking skills vital for success across all disciplines, such as using computational tools to analyze and study data and working with large data sets to analyze, visualize, and draw conclusions from trends.This course is unique in its focus on fostering student creativity.",
+        "requirements": ["21st century", "5 Credits", " Grades 10-12"],
+        "image": "https://picsum.photos/100/100"
+    },
+    {
+        "class": "Architecture",
+        "teacher":"Mrs. Ransom",
+        "description": "Through this course, students will learn the basics of architectural principles, including spatial design, structural concepts, and the relationship between form and function. Ideal for those interested in exploring careers in architecture, urban planning, or interior design.",
+        "requirements": ["21st century", "5 Credits", "Grades 9-12"],
+        "image": "https://picsum.photos/600/600"
+    },
+    {
+        "class": "Digital Media",
+        "teacher": "Mrs. Leonard",
+        "description": " This course has projects that will incorporate skills in paper engineering, digital multimedia production, digital video, computer illustration, animation, computer internet exploration, website design, and digital photography.",
+        "requirements": ["21st century", "5 Credits", "Grades 9-12"],
+        "image": "https://picsum.photos/600/600"
+    },
+    {
+        "class": "Engineering Graphics",
+        "teacher": "Mrs. Russo",
+        "description": "Studnets will master traditional drafting and sketching techniques in addition to learning to use industry-standard CAD (computer-aided design) software. Exploration of ergonomic design, industrial design, and product redesign will also take place throughout the course.",
+        "requirements": ["21st century", "5 Credits", "Grades 9-12"],
+        "image": "https://picsum.photos/600/600"
+    },
+    {
+        "class": "Honors Innovation and Design",
+        "teacher": "Mr. Werntz",
+        "description": "Students will participate in dynamic and competitive activities that emphasize critical and creative thinking. This course promotes leadership skills and career awareness.",
+        "requirements": ["21st century", "5 Credits", "Grades 11-12"],
+        "image": "https://picsum.photos/600/600"
+    },
+    {
+        "class": "Technology Systems & Design",
+        "teacher": "Mrs. Russo",
+        "description": "Provides an overview of technology's impact on society, including its historical context, current effects, and potential future developments.",
+        "requirements": ["21st century", "5 Credits", "Grades 9-12"],
+        "image": "https://picsum.photos/600/600"
+    },
+    {
+        "class": "Video Editing",
+        "teacher": "Mr. Werntz",
+        "description": "In-depth exploration of the historical impacts that innovations in mass media have had on cultures, both past and present. Dtudents will develop an appreciation for the power of media and learn the steps involved in the film creation process.",
+        "requirements": ["21st century", "5 Credits", "Grades 9-12"],
+        "image": "https://picsum.photos/600/600"
+    },
+    {
+        "class": "Web Design Pathway Program (WDPP)",
+        "teacher": "Mr. Kilgore & Mrs. Leonard",
+        "description": "This course discusses the concepts and skills required to plan, design and build advanced websites, with a focus on sophisticated user interaction enabled by programming the web browser (such as Chrome). This course takes place over 3 years.",
+        "requirements": ["21st century", "5 Credits", "Grades 10-12", "3 NJIT Credits"],
+        "image": "https://picsum.photos/600/600"
+    },
+    {
+        "class": "Woodworking & Cabinetmaking",
+        "teacher": "Mr. DellaPietro & Mrs. Ransom",
+        "description": "In this course, students learn craftsmanship through established industry standards including the latest technological techniques. Students implement lessons in advanced machine operations, joinery, cabinet construction, and finishing. ",
+        "requirements": ["21st century", "5 Credits", "Grades 10-12"],
+        "image": "https://picsum.photos/600/600"
     }
 ]

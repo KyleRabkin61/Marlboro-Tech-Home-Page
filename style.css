@@ -241,6 +241,62 @@ screen sizes:
     font-size: 33px;
 }
 
+.course {
+    background: #113F75;
+    margin: 20px;
+    padding: 20px;
+    border: #F4E04D solid 5px;
+    border-radius: 6px;
+    box-shadow: #a5a9ae 0px 8px 8px 0px, #a5a9ae 9px 4px 16px 0px;
+}
+
+.course-image {
+    height: 300px;
+    padding: 20px;
+}
+
+.course-name {
+    color: white;
+    font-family: "Kaisei Decol", serif;
+    font-weight: 900;
+    font-size: 36px;
+}
+.course-teachers{
+    font-family: "Fira Sans Condensed", serif;
+    color: #F4E04D;
+}
+.course-description{
+    font-family: "KoHo", serif;
+    color: #ffffff;
+}
+.course-more-info{
+    font-family: "Kaisei Decol", serif;
+    color: #ffffff;
+}
+.course-requirements{
+    color: #F4E04D;
+    
+}
+.bulletwords{
+    font-family: "KoHo", serif;
+    color: #ffffff;
+}
+.course-additional{
+    font-family: "Kaisei Decol", serif;
+    color: #ffffff;
+    font-weight: 900;
+    font-size: 36px;
+}
+
+.courses-btn {
+}
+
+  /* or the buttons:  font-family: "Madimi One", serif;
+    for long-blurbs:   font-family: "KoHo", serif;
+    for titles above blurbs:   font-family: "Kaisei Decol", serif;
+    big titles/navbar:  font-family: "Fira Sans Condensed", serif;*/
+
+
 /* staff page css */
 
 .staff-header-row {

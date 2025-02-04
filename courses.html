@@ -83,8 +83,21 @@
             </div>
         </div>
 
-        <div class="row courses d-flex justify-content-center align-items-center">
-            <div class="col-12 my-3 d-flex justify-content-center teacher flex-column">
+        <div class="row courses d-flex justify-content-center">
+            <div class="col-12 my-3 d-flex justify-content-center course flex-column" v-for="(course, index) in courses" :key="course.id">
+                <div class="row d-flex justify-content-center">
+                    <img v-bind:src="courses[index].image" class="col-12 col-lg-4 order-lg-3 course-image" alt="">
+                    <div class="col-6 col-lg-4 course-info d-flex  order-lg-1 flex-column">
+                        <h1 class="text-center course-name">{{ courses[index].class }}</h1>
+                        <p class="text-center course-teachers"> {{ courses[index].teacher }} </p>
+                        <p class="text-center course-description">{{ courses[index].description }}</p>
+                    </div>
+                    <div class="col-6 col-lg-4 course-more-info d-flex order-lg-2 flex-column">
+                        <h1 class="text-center course-additional">Additional Information:</h1>
+                        <li class="text-center course-requirements p-2" v-for="(info, infoIndex) in courses[index].requirements" :key="courseIndex"> <span class="bulletwords">{{ info }}</span></li>
+                        <button class="btn courses-btn">Click to learn more</button>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
@@ -126,6 +139,7 @@
         integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
         crossorigin="anonymous"></script>
 
+    <!-- script.js -->
     <script src="script.js"></script>
 
     <!-- courses.js -->

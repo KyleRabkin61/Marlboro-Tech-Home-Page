@@ -8,9 +8,6 @@ const vue_app = Vue.createApp({
             return {
                   staff: []
             }
-      },
-      methods: {
-
       }
 })
 
