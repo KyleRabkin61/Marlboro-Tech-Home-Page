@@ -226,7 +226,10 @@ screen sizes:
 /* courses page css */
 
 .btn-row {
-    margin: 60px 0;
+    position: relative;
+    top: -100px;
+    padding: 20px;
+    border-radius: 6px;
 }
 
 .course-btn {
@@ -253,13 +256,14 @@ screen sizes:
 .course-image {
     height: 300px;
     padding: 20px;
+    object-fit: cover;
 }
 
 .course-name {
     color: white;
     font-family: "Kaisei Decol", serif;
     font-weight: 900;
-    font-size: 36px;
+    font-size: clamp(30px, 3vw, 40px);
 }
 .course-teachers{
     font-family: "Fira Sans Condensed", serif;
@@ -285,10 +289,12 @@ screen sizes:
     font-family: "Kaisei Decol", serif;
     color: #ffffff;
     font-weight: 900;
-    font-size: 36px;
+    font-size: clamp(30px, 3vw, 40px);
 }
 
 .courses-btn {
+    position: relative;
+    top: 10px;
 }
 
   /* or the buttons:  font-family: "Madimi One", serif;
