@@ -1,14 +1,17 @@
 const vue_app = Vue.createApp({
       data() {
           return {
-              courses: []
+              courseandclub: {
+                courses: [],
+                clubs: []
+              }
           };
       },
       created() {
-          fetch('courses.json')
+          fetch('courseandclub.json')
               .then(response => response.json())
               .then(json => {
-                  this.courses = json;
+                  this.courseandclub = json;
               })
               .catch(error => console.error("Error fetching courses:", error));
       }
