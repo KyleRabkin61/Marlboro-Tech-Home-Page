@@ -20,6 +20,11 @@
     <!-- Vue Framework -->
     <script src="https://unpkg.com/vue@3.0.11/dist/vue.global.js"></script>
 
+    <!-- jquery link -->
+    <script src="https://code.jquery.com/jquery-3.7.1.js"
+        integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
+        crossorigin="anonymous"></script>
+
     <!-- google font links -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -76,16 +81,16 @@
 
         <div class="row btn-row d-flex justify-content-center align-items-center">
             <div class="col-6 d-flex justify-content-center align-items-center">
-                <button class="btn course-btn">Click here to see<br>courses!</button>
+                <button class="btn course-btn" id="coursesBtn">Click here to see<br>courses!</button>
             </div>
             <div class="col-6 d-flex justify-content-center align-items-center">
-                <button class="btn club-btn">Click here to see<br>clubs!</button>
+                <button class="btn club-btn" id="clubsBtn">Click here to see<br>clubs!</button>
             </div>
         </div>
 
         <!-- courses -->
-        <div class="row courses d-flex justify-content-center">
-            <div class="col-12 my-3 d-flex justify-content-center course flex-column" v-for="(course, index) in courseandclub.courses" :key="course.id">
+        <div class="row courses d-flex justify-content-center" id="theCourses">
+            <div class="col-12 my-3 d-flex justify-content-center course flex-column" v-for="course in courseandclub.courses" :key="course.id">
                 <div class="row d-flex justify-content-center">
                     <img v-bind:src="course.image" class="col-12 col-lg-4 order-lg-3 course-image" alt="">
                     <div class="col-6 col-lg-4 course-info d-flex order-lg-1 flex-column">
@@ -96,6 +101,24 @@
                     <div class="col-6 col-lg-4 course-more-info d-flex order-lg-2 flex-column">
                         <h1 class="text-center course-additional">Additional Information:</h1>
                         <li class="text-center course-requirements p-2" v-for="(info, infoIndex) in course.requirements" :key="infoIndex"> <span class="bulletwords">{{ info }}</span></li>
+                        <button class="btn courses-btn">Click to learn more</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- clubs -->
+        <div class="row courses d-flex justify-content-center d-none" id="theClubs">
+            <div class="col-12 my-3 d-flex justify-content-center course flex-column" v-for="club in courseandclub.clubs" :key="club.id">
+                <div class="row d-flex justify-content-center">
+                    <img v-bind:src="club.image" class="col-12 col-lg-4 order-lg-3 course-image" alt="">
+                    <div class="col-6 col-lg-4 course-info d-flex order-lg-1 flex-column">
+                        <h1 class="text-center course-name">{{ club.class }}</h1>
+                        <p class="text-center course-teachers">{{ club.teacher }}</p>
+                        <p class="text-center course-description">{{ club.description }}</p>
+                    </div>
+                    <div class="col-6 col-lg-4 course-more-info d-flex order-lg-2 flex-column">
+                        <h1 class="text-center course-additional">Additional Information:</h1>
                         <button class="btn courses-btn">Click to learn more</button>
                     </div>
                 </div>

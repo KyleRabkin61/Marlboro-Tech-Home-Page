@@ -113,25 +113,30 @@
         }
     ],
     "clubs": [
-        [
-            {
-                "class": "Technology Student Association",
-                "teacher": ["idk", "idk"],
-                "description": "idk",
-                "image": "url(https://picsum.photos/600/700)"
-            },
-            {
-                "class": "Mustang Morning Show",
-                "teacher": ["idk"],
-                "description": "idk",
-                "image": "url(https://picsum.photos/600/700)"
-            },
-            {
-                "class": "Coffee and Coding",
-                "teacher": ["Mahek Mahesh"],
-                "description": " idk",
-                "image": "url(https://picsum.photos/600/700)"
-            }
-        ]
+        {
+            "class": "Technology Student Association",
+            "teacher": [
+                "idk",
+                "idk"
+            ],
+            "description": "idk",
+            "image": "https://picsum.photos/600/700"
+        },
+        {
+            "class": "Mustang Morning Show",
+            "teacher": [
+                "idk"
+            ],
+            "description": "idk",
+            "image": "https://picsum.photos/600/700"
+        },
+        {
+            "class": "Coffee and Coding",
+            "teacher": [
+                "Mahek Mahesh"
+            ],
+            "description": " idk",
+            "image": "https://picsum.photos/600/700"
+        }
     ]
 }
