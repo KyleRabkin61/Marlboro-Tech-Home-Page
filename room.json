@@ -7,19 +7,19 @@
     },
     {
         "room": "B107",
-        "description": "Offers large tables for maximum space to work and build. Also has Autodesk Inventor, 3D printers, Carvey CNC, and AutoDesk Rivet for Prototyping / 3-D Modeling with desktops.",
+        "description": "Offers large tables for maximum space to work and build. Also has Autodesk Inventor, 3D printers, and a laser cutter, Carvey CNC, and AutoDesk Rivet for Prototyping / 3-D Modeling with desktops.",
         "mainImage": "",
         "images": ["","",""]
     },
     {
         "room": "B108",
-        "description": "Offers large tables for group work for the ability to build specific types of electronics.",
+        "description": "Offers large tables for group work for the ability to build specific types of electronics. Also includes metal working machines with access to 3D printers.",
         "mainImage": "",
         "images": ["","",""]
     },
     {
         "room": "B109",
-        "description": "Offers large tables to encourage group work with access to printers, 3D printers, and a laser cutter. Also includes high quality desktops to plan out designs and projects.",
+        "description": "Offers large tables with enough space to build projects. Includes laser systems, cutting saws, sanding table, a saw stop, and much more.",
         "mainImage": "",
         "images": ["","",""]
     },
