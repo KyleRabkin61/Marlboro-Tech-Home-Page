@@ -129,7 +129,9 @@ screen sizes:
 .index-header {
     width: clamp(600px, 70vw, 900px);
     height: 600px;
-    background: url(https://picsum.photos/600/700);
+    background: url(classroom-imgs/hallway-2.png);
+    background-position: center center;
+    background-size: cover;
     margin-top: 100px;
 }
 
