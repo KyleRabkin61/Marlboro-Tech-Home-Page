@@ -73,20 +73,23 @@
     </nav>
 
     <div id="vue_app" class="container">
-        <div class="row staff-row d-flex justify-content-center align-items-center">
-            <div class="course-header col-12 d-flex justify-content-center align-items-center">
-                <h1 class="text-center info-title-course">Courses & Clubs</h1>
+        <div class="row course-header-row d-flex justify-content-center align-items-center">
+            <div class="row d-flex justify-content-center align-items-center">
+                <div class="course-header col-12 d-flex justify-content-center align-items-center">
+                    <h1 class="text-center info-title-course">Courses & Clubs</h1>
+                </div>
+            </div>
+    
+            <div class="row btn-row d-flex justify-content-center align-items-center">
+                <div class="col-6 d-flex justify-content-center align-items-center">
+                    <button class="btn course-btn" id="coursesBtn">Click here to see<br>courses!</button>
+                </div>
+                <div class="col-6 d-flex justify-content-center align-items-center">
+                    <button class="btn club-btn" id="clubsBtn">Click here to see<br>clubs!</button>
+                </div>
             </div>
         </div>
-
-        <div class="row btn-row d-flex justify-content-center align-items-center">
-            <div class="col-6 d-flex justify-content-center align-items-center">
-                <button class="btn course-btn" id="coursesBtn">Click here to see<br>courses!</button>
-            </div>
-            <div class="col-6 d-flex justify-content-center align-items-center">
-                <button class="btn club-btn" id="clubsBtn">Click here to see<br>clubs!</button>
-            </div>
-        </div>
+        
 
         <!-- courses -->
         <div class="row courses d-flex justify-content-center" id="theCourses">
@@ -99,7 +102,7 @@
                         <p class="text-center course-description">{{ course.description }}</p>
                     </div>
                     <div class="col-6 col-lg-4 course-more-info d-flex order-lg-2 flex-column">
-                        <h1 class="text-center course-additional">Additional Information:</h1>
+                        <h1 class="text-center course-additional">More Info:</h1>
                         <li class="text-center course-requirements p-2" v-for="(info, infoIndex) in course.requirements" :key="infoIndex"> <span class="bulletwords">{{ info }}</span></li>
                         <button class="btn courses-btn">Click to learn more</button>
                     </div>

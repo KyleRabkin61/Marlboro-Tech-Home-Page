@@ -173,6 +173,7 @@ screen sizes:
     background: #113F75;
     border: #F4E04D 5px solid;
     border-radius: 6px;
+    color: black;
     z-index: 2;
     margin: -100px;
     box-shadow: black 0px 2px 4px 0px, rgb(64, 64, 64) 0px 2px 16px 0px;
@@ -191,6 +192,7 @@ screen sizes:
     background: #113F75;
     border: #F4E04D 5px solid;
     border-radius: 6px;
+    color: black;
     z-index: 2;
     margin: -100px;
     box-shadow: black 0px 2px 4px 0px, rgb(64, 64, 64) 0px 2px 16px 0px;
@@ -209,6 +211,7 @@ screen sizes:
     background: #113F75;
     border: #F4E04D 5px solid;
     border-radius: 6px;
+    color: black;
     z-index: 2;
     margin: -100px;
     box-shadow: black 0px 2px 4px 0px, rgb(64, 64, 64) 0px 2px 16px 0px;
@@ -230,6 +233,19 @@ screen sizes:
 }
 
 /* room css */
+
+.classroom-header-row {
+    height: 92.50vh;
+}
+
+.classroom-header {
+    background: #113F75;
+    border: solid 5px #F4E04D;
+    height: 400px;
+    width: clamp(600px, 70vw, 900px);
+    margin-top: 100px;
+    box-shadow: #a5a9ae 0px 8px 8px 0px, #a5a9ae 9px 4px 16px 0px;
+}
 
 .classroom-row {
     margin-top: 100px;
@@ -260,6 +276,7 @@ screen sizes:
 .description {
     font-family: "KoHo", serif;
     font-size: 14px;
+    color: black;
 }
 
 .descriptioncroom {
@@ -267,15 +284,8 @@ screen sizes:
     border-radius: 0 0 10px 10px;
     height: 250px;
 }
-.classroom-header{
-    background: #113F75;
-    border: solid 5px #F4E04D;
-    height: 300px;
-    width: clamp(600px, 70vw, 900px);
-    margin-top: 100px;
-    box-shadow: #a5a9ae 0px 8px 8px 0px, #a5a9ae 9px 4px 16px 0px;
-}
-.info-title-class{
+
+.info-title-class {
     color: white;
     font-family: "Kaisei Decol", serif;
     font-size: clamp(60px, 3vw, 75px);
@@ -311,16 +321,21 @@ screen sizes:
 
 /* courses page css */
 
-.course-header{
+.course-header-row {
+    height: 97.5vh;
+    margin-top: 50px;
+}
+
+.course-header {
     background: #113F75;
     border: solid 5px #F4E04D;
-    height: 300px;
+    height: 400px;
     width: clamp(600px, 70vw, 900px);
     margin-top: 100px;
     box-shadow: #a5a9ae 0px 8px 8px 0px, #a5a9ae 9px 4px 16px 0px;
 }
 
-.info-title-course{
+.info-title-course {
     color: white;
     font-family: "Kaisei Decol", serif;
     font-size: clamp(60px, 3vw, 75px);
@@ -329,7 +344,7 @@ screen sizes:
 
 .btn-row {
     position: relative;
-    top: -100px;
+    top: clamp(-175px, 20vh, -200px);
     padding: 20px;
     border-radius: 6px;
 }
@@ -337,13 +352,13 @@ screen sizes:
 .course-btn {
     width: 300px;
     height: 150px;
-    font-size: 33px;
+    font-size: clamp(20px, 4vw, 33px);
 }
 
 .club-btn {
     width: 300px;
     height: 150px;
-    font-size: 33px;
+    font-size: clamp(20px, 4vw, 33px);
 }
 
 .course {
@@ -367,27 +382,33 @@ screen sizes:
     font-weight: 900;
     font-size: clamp(30px, 3vw, 40px);
 }
-.course-teachers{
+
+.course-teachers {
     font-family: "Fira Sans Condensed", serif;
     color: #F4E04D;
 }
-.course-description{
+
+.course-description {
     font-family: "KoHo", serif;
     color: #ffffff;
 }
-.course-more-info{
+
+.course-more-info {
     font-family: "Kaisei Decol", serif;
     color: #ffffff;
 }
-.course-requirements{
+
+.course-requirements {
     color: #F4E04D;
-    
+
 }
-.bulletwords{
+
+.bulletwords {
     font-family: "KoHo", serif;
     color: #ffffff;
 }
-.course-additional{
+
+.course-additional {
     font-family: "Kaisei Decol", serif;
     color: #ffffff;
     font-weight: 900;
@@ -399,7 +420,7 @@ screen sizes:
     top: 10px;
 }
 
-  /* or the buttons:  font-family: "Madimi One", serif;
+/* or the buttons:  font-family: "Madimi One", serif;
     for long-blurbs:   font-family: "KoHo", serif;
     for titles above blurbs:   font-family: "Kaisei Decol", serif;
     big titles/navbar:  font-family: "Fira Sans Condensed", serif;*/
@@ -408,14 +429,14 @@ screen sizes:
 /* staff page css */
 
 .staff-header-row {
-    margin-top: 100px;
+    height: 92.5vh;
 }
 
 .staff-header {
     background: #113F75;
     border: #F4E04D 5px solid;
     border-radius: 6px;
-    height: 300px;
+    height: 400px;
     width: clamp(600px, 70vw, 800px);
     z-index: 1;
     box-shadow: #a5a9ae 0px 8px 8px 0px, #a5a9ae 9px 4px 16px 0px;
@@ -436,7 +457,7 @@ screen sizes:
     position: relative;
     bottom: 70px;
     box-shadow: black 0px 2px 4px 0px, rgb(64, 64, 64) 0px 2px 16px 0px;
-   
+
 }
 
 .staff-hover-section-text {
@@ -486,16 +507,19 @@ screen sizes:
     justify-content: center;
     transition: 1s;
 }
-.card:hover .card-body{
+
+.card:hover .card-body {
     right: 0;
     transition: 1s;
 }
+
 .card-title {
     font-optical-sizing: auto;
     font-style: normal;
     font-size: 1.8em;
     font-weight: 500;
 }
+
 .card-info {
     font-size: 1em;
 }
@@ -509,32 +533,38 @@ screen sizes:
     font-family: "KoHo", serif;
     color: black;
 }
-.teacher-title{
+
+.teacher-title {
     font-family: "Kaisei Decol", serif;
     font-size: 32px;
     text-decoration: underline;
 }
-.teacher-andd{
+
+.teacher-andre-years {
     font-family: "KoHo", serif;
     font-size: 20px;
     font-weight: 800;
 }
-.teacher-and{
+
+.teacher-andre-fun {
     font-family: "KoHo", serif;
     font-size: 20px;
     font-weight: 800;
 }
-.teacher-fun{
+
+.teacher-fun {
     font-family: "KoHo", serif;
     font-size: 16px;
     font-weight: 800;
 }
-.teacher-years{
+
+.teacher-years {
     font-family: "KoHo", serif;
     font-size: 16px;
     font-weight: 800;
 }
-.course-text{
+
+.course-text {
     font-family: "Kaisei Decol", serif;
     font-size: 16px;
     list-style-type: none;
@@ -717,22 +747,22 @@ footer {
 
 ::-webkit-scrollbar {
     width: 15px;
-  }
-    
-  /* Track */
-    
-  ::-webkit-scrollbar-track {
-    background: #dddcdc; 
-  }
-     
-  /* Handle */
-    
-  ::-webkit-scrollbar-thumb {
-    background:#F4E04D;
-  }
-    
-  /* Handle on hover */
-    
-    ::-webkit-scrollbar-thumb:hover {
-      background: #a7982b; 
-  }
+}
+
+/* Track */
+
+::-webkit-scrollbar-track {
+    background: #dddcdc;
+}
+
+/* Handle */
+
+::-webkit-scrollbar-thumb {
+    background: #F4E04D;
+}
+
+/* Handle on hover */
+
+::-webkit-scrollbar-thumb:hover {
+    background: #a7982b;
+}
