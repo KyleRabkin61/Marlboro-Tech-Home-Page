@@ -126,13 +126,17 @@ screen sizes:
 
 /* index header css */
 
+.index-header-row {
+    height: 92.5vh;
+}
+
 .index-header {
-    width: clamp(600px, 70vw, 900px);
-    height: 600px;
+    width: clamp(600px, 70vw, 1200px);
+    height: 70vh;
     background: url(classroom-imgs/hallway-2.png);
     background-position: center center;
     background-size: cover;
-    margin-top: 100px;
+    margin-top: 120px;
 }
 
 .header {
@@ -157,7 +161,7 @@ screen sizes:
 }
 
 .what-image {
-    height: 600px;
+    height: 400px;
     width: clamp(600px, 70vw, 900px);
     background: url(https://picsum.photos/600/700);
     z-index: 1;
@@ -175,7 +179,7 @@ screen sizes:
 }
 
 .offer-image {
-    height: 600px;
+    height: 400px;
     width: clamp(600px, 70vw, 900px);
     background: url(https://picsum.photos/600/700);
     z-index: 1;
@@ -193,7 +197,7 @@ screen sizes:
 }
 
 .staff-image {
-    height: 600px;
+    height: 400px;
     width: clamp(600px, 70vw, 900px);
     background: url(https://picsum.photos/600/700);
     z-index: 1;
@@ -645,6 +649,7 @@ footer {
 
 @media (min-width: 992px) {
     .what-image {
+        height: 600px !important;
         width: clamp(300px, 50vw, 800px) !important;
         position: relative;
         left: 50px;
@@ -658,6 +663,7 @@ footer {
     }
 
     .offer-image {
+        height: 600px !important;
         width: clamp(300px, 50vw, 800px) !important;
         position: relative;
         right: 50px;
@@ -671,6 +677,7 @@ footer {
     }
 
     .staff-image {
+        height: 600px !important;
         width: clamp(300px, 50vw, 800px) !important;
         position: relative;
         left: 50px;
