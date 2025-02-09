@@ -51,7 +51,7 @@
                         <a class="nav-link" aria-current="page" href="index.html">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" aria-current="page" href="room.html">Classrooms</a>
+                        <a class="nav-link" aria-current="page" href="rooms.html">Classrooms</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" aria-current="page" href="courses.html">Courses and Clubs</a>
@@ -80,21 +80,21 @@
         <!-- staff -->
         <div class="row staff-row d-flex justify-content-center align-items-center">
             <div class="col-12 col-md-6 col-xl-4 my-3 d-flex justify-content-center teacher flex-column"
-                v-for="(teacher, index) in staff" :key="teacher.id">
+                v-for="teacher in staff" :key="teacher.id">
                 <div class="card mx-auto">
-                    <img class="teacher-photo" v-bind:src="staff[index].img">
+                    <img class="teacher-photo" v-bind:src="teacher.img">
                     <div class="card-body d-flex justify-content-center align-items-center flex-column">
                         <h1 class="teacher-title">Courses:</h1>
-                        <li v-for="(course, courseIndex) in staff[index].courses" :key="courseIndex" class="course-text text-center">
+                        <li v-for="(course, courseIndex) in teacher.courses" :key="courseIndex" class="course-text text-center">
                             {{ course }}
                         </li> <br>
-                        <p class="teacher-years-taught text-center teacher-years">Years taught: {{ staff[index].yearsTaught }}</p>
-                        <p class="teacher-fun-fact text-center teacher-fun">Fun fact: {{ staff[index].funFact }}</p>
+                        <p class="teacher-years-taught text-center teacher-years">Years taught: {{ teacher.yearsTaught }}</p>
+                        <p class="teacher-fun-fact text-center teacher-fun">Fun fact: {{ teacher.funFact }}</p>
                             
                     </div>
                 </div>
-                <h1 class="text-center mt-3 teacher-name">{{ staff[index].name }}</h1>
-                <p class="teacher-email text-center">{{ staff[index].email }}</p>
+                <h1 class="text-center mt-3 teacher-name">{{ teacher.name }}</h1>
+                <p class="teacher-email text-center">{{ teacher.email }}</p>
             </div>
         </div>
         <div class="row staff-row d-flex justify-content-center align-items-center">
