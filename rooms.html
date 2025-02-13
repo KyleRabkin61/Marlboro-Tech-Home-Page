@@ -81,16 +81,19 @@
 
         <div class="row classroom-row">
             <div class="col-12 col-xl-6" v-for="room in rooms" :key="room.id">
+
                 <div class="row my-3 room-row g-0">
-                    <div class="col-12 col-lg-6 d-flex justify-content-center align-items-center roompic" :style="{ backgroundImage: `url(${room.mainImage})`}">
+                    <div class="col-12 col-lg-6 d-flex justify-content-center align-items-center roompic"
+                        :style="{ backgroundImage: `url(${room.mainImage})`}">
                         <h1 class="title-heading">{{ room.number }}</h1>
                     </div>
                     <div
                         class="col-12 col-lg-6 d-flex flex-column justify-content-center align-items-center descriptioncroom">
-                        <p class="description text-center">{{ room.description }}</p>
+                        <p class="description text-center p-3">{{ room.description }}</p>
 
                         <!-- button trigger modal -->
-                        <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                        <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#exampleModal"
+                            @click="selectedRoom = room">
                             More Pictures
                         </button>
 
@@ -100,36 +103,26 @@
                             <div class="modal-dialog modal-dialog-centered">
                                 <div class="modal-content">
                                     <div class="modal-header text-center">
-                                        <h1 class="text-center modaltitle" id="exampleModalLabel">More Photos:</h1>
-
+                                        <h1 class="text-center modaltitle" id="exampleModalLabel">
+                                            More Photos: {{ selectedRoom?.number }}
+                                        </h1>
                                         <button type="button" class="btn-close" data-bs-dismiss="modal"
                                             aria-label="Close"></button>
                                     </div>
                                     <div class="modal-body">
-
-                                        <!-- carousel -->
+                                        <!-- Carousel -->
                                         <div id="classCarousel" class="carousel slide">
                                             <div class="carousel-indicators">
-                                                <button type="button" data-bs-target="#classCarousel"
-                                                    data-bs-slide-to="0" class="active" aria-current="true"
-                                                    aria-label="Slide 1"></button>
-                                                <button type="button" data-bs-target="#classCarousel"
-                                                    data-bs-slide-to="1" aria-label="Slide 2"></button>
-                                                <button type="button" data-bs-target="#classCarousel"
-                                                    data-bs-slide-to="2" aria-label="Slide 3"></button>
+                                                <button v-for="(image, index) in selectedRoom?.images" :key="index"
+                                                    type="button" data-bs-target="#classCarousel"
+                                                    :data-bs-slide-to="index" :class="{ 'active': index === 0 }"
+                                                    :aria-label="'Slide ' + (index + 1)">
+                                                </button>
                                             </div>
                                             <div class="carousel-inner">
-                                                <div class="carousel-item active c-item">
-                                                    <img src="https://picsum.photos/800/600" class="d-block w-100 c-img"
-                                                        alt="...">
-                                                </div>
-                                                <div class="carousel-item c-item">
-                                                    <img src="https://picsum.photos/800/600" class="d-block w-100 c-img"
-                                                        alt="...">
-                                                </div>
-                                                <div class="carousel-item c-item">
-                                                    <img src="https://picsum.photos/800/600" class="d-block w-100 c-img"
-                                                        alt="...">
+                                                <div v-for="(image, index) in selectedRoom?.images" :key="index"
+                                                    class="carousel-item c-item" :class="{ 'active': index === 0 }">
+                                                    <img :src="image" class="d-block w-100 c-img" alt="Classroom Image">
                                                 </div>
                                             </div>
                                             <button class="carousel-control-prev" type="button"

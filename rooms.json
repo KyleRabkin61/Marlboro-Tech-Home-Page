@@ -3,37 +3,78 @@
         "number": "B106",
         "description": "Offers high quality desktops that have editing software and access to Adobe Premiere. Greenscreen with studio lighting is also available for student access aswell as Digital Camera Equipment.",
         "mainImage": "classroom-imgs/B106-1.png",
-        "images": ["classroom-imgs/B106-1.png","",""]
+        "images": [
+            "classroom-imgs/B106-1.png",
+            "classroom-imgs/B106-2.png",
+            "classroom-imgs/B106-3.png",
+            "classroom-imgs/B106-computer-row.png",
+            "classroom-imgs/B106-studio-1.png",
+            "classroom-imgs/B106-studio-2.png"
+        ]
     },
     {
         "number": "B107",
         "description": "Offers large tables for maximum space to work and build. Also has Autodesk Inventor, 3D printers, and a laser cutter, Carvey CNC, and AutoDesk Rivet for Prototyping / 3-D Modeling with desktops.",
         "mainImage": "classroom-imgs/B107-1.png",
-        "images": ["","",""]
+        "images": [
+            "classroom-imgs/B107-1.png",
+            "classroom-imgs/B107-2.png",
+            "classroom-imgs/B107-3.png",
+            "classroom-imgs/B107-3D-printers.png",
+            "classroom-imgs/B107-large-format-plotter.png",
+            "classroom-imgs/B107-lasercutter.png"
+        ]
     },
     {
         "number": "B108",
         "description": "Offers large tables for group work for the ability to build specific types of electronics. Also includes metal working machines with access to 3D printers.",
         "mainImage": "classroom-imgs/B108-1.png",
-        "images": ["","",""]
+        "images": [
+            "classroom-imgs/B108-1.png",
+            "classroom-imgs/B108-2.png",
+            "classroom-imgs/B108-4.png",
+            "classroom-imgs/B108-3D-2.png",
+            "classroom-imgs/B108-band-saw.png",
+            "classroom-imgs/B108-3D-1.png"
+        ]
     },
     {
         "number": "B109",
         "description": "Offers large tables with enough space to build projects. Includes laser systems, cutting saws, sanding table, a saw stop, and much more.",
         "mainImage": "classroom-imgs/B109-1.png",
-        "images": ["","",""]
+        "images": [
+            "classroom-imgs/B109-1.png",
+            "classroom-imgs/B109-2.png",
+            "classroom-imgs/B109-miter-saw.png",
+            "classroom-imgs/B109-sanding-table.png",
+            "classroom-imgs/B109-belt-sander.png",
+            "classroom-imgs/B109-table-saw.png"
+        ]
     },
     {
         "number": "B110",
         "description": "Offers high quality desktops with access to Adoble Cloud and specifcally Adobe Illustrato and Adobe Photoshop. Also has Digital Cameras, a 3D printer, a normal printer, and numerous craft tools.",
         "mainImage": "classroom-imgs/B110-1.png",
-        "images": ["","",""]
+        "images": [
+            "classroom-imgs/B110-1.png",
+            "classroom-imgs/B110-1.png",
+            "classroom-imgs/B110-1.png",
+            "classroom-imgs/B110-computer-row.png",
+            "classroom-imgs/B110-computer.png",
+            "classroom-imgs/B110-lasercutter.png"
+        ]
     },
     {
         "number": "B111",
         "description": "Offers high quality desktops with the ability to handle apps such as VScode and Adobe Cloud that require a lot of power to run. Numerous whiteboards for planning and educational purposes, as well as a printer accessible to students.",
         "mainImage": "classroom-imgs/B111-1.png",
-        "images": ["","",""]
+        "images": [
+            "classroom-imgs/B111-1.png",
+            "classroom-imgs/B111-2.png",
+            "classroom-imgs/B111-3.png",
+            "classroom-imgs/B111-4.png",
+            "classroom-imgs/B111-computer.png",
+            "classroom-imgs/B111-printer.png"
+        ]
     }
-   
 ]

@@ -1,17 +1,20 @@
-const vue_app = Vue.createApp({
+const app = Vue.createApp({
     data() {
         return {
-            rooms: []
+            rooms: [], // Store classroom data
+            selectedRoom: null // Store the selected room for modal
         };
     },
     created() {
-        fetch('rooms.json')
+        // Fetch JSON data
+        fetch("rooms.json") // Replace with actual path
             .then(response => response.json())
-            .then(json => {
-                this.rooms = json;
+            .then(data => {
+                this.rooms = data;
             })
-            .catch(error => console.error("Error fetching data:", error));
+            .catch(error => console.error("Error loading rooms:", error));
     }
 });
 
-vue_app.mount("#vue_app")
+// Mount to the Vue app
+app.mount("#vue_app");
