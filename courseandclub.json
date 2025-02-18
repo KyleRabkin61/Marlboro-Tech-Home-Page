@@ -115,27 +115,35 @@
     "clubs": [
         {
             "class": "Technology Student Association",
-            "teacher": [
-                "idk",
-                "idk"
+            "teacher": 
+                "Mr. Werntz",
+            "description": "Students are part of an organizaton where they can compete in various exciting competitions ranging rom technology challenges to structural engineering.",
+            "requirements": [
+                "See more information on TSA website"
+               
             ],
-            "description": "idk",
             "image": "https://picsum.photos/600/700"
         },
         {
             "class": "Mustang Morning Show",
-            "teacher": [
-                "idk"
+            "teacher": 
+                "Mr. Werntz",
+            "description": "The Mustang Morning Show is aired on the last Friday of every month. It recaps the month with fun games, activites, news, and sports.",
+            "requirements": [
+                "See more information on Mustang Morning Show website"
+               
             ],
-            "description": "idk",
             "image": "https://picsum.photos/600/700"
         },
         {
             "class": "Coffee and Coding",
-            "teacher": [
-                "Mahek Mahesh"
+            "teacher":
+                "Mr. Kilgore and Mrs. Leonard",
+            "description": "Coding and Coffee occurs every friday with tutoring and extra help available in the morning. Occasionally, food and snacks will be offered along with building deeper connections through coding.",
+            "requirements": [
+                "See more information on Coffee & Coding website"
+               
             ],
-            "description": " idk",
             "image": "https://picsum.photos/600/700"
         }
     ]

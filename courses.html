@@ -104,7 +104,7 @@
                     <div class="col-6 col-lg-4 course-more-info d-flex order-lg-2 flex-column">
                         <h1 class="text-center course-additional">More Info:</h1>
                         <li class="text-center course-requirements p-2" v-for="(info, infoIndex) in course.requirements" :key="infoIndex"> <span class="bulletwords">{{ info }}</span></li>
-                        <button class="btn courses-btn">Click to learn more</button>
+                        <button class="btn courses-btn">Click to visit website!</button>
                     </div>
                 </div>
             </div>
@@ -121,8 +121,9 @@
                         <p class="text-center course-description">{{ club.description }}</p>
                     </div>
                     <div class="col-6 col-lg-4 course-more-info d-flex order-lg-2 flex-column">
-                        <h1 class="text-center course-additional">Additional Information:</h1>
-                        <button class="btn courses-btn">Click to learn more</button>
+                        <h1 class="text-center course-additional">More Info:</h1>
+                        <li class="text-center course-requirements p-2" v-for="(info, infoIndex) in club.requirements" :key="infoIndex"> <span class="bulletwords">{{ info }}</span></li>
+                        <button class="btn courses-btn">Click to visit website!</button>
                     </div>
                 </div>
             </div>
