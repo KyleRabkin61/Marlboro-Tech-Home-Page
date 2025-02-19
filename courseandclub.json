@@ -23,17 +23,6 @@
             "image": "https://picsum.photos/600/600"
         },
         {
-            "class": "Digital Media",
-            "teacher": "Mrs. Leonard",
-            "description": " This course has projects that will incorporate skills in paper engineering, digital multimedia production, digital video, computer illustration, animation, computer internet exploration, website design, and digital photography.",
-            "requirements": [
-                "21st century",
-                "5 Credits",
-                "Grades 9-12"
-            ],
-            "image": "https://picsum.photos/600/600"
-        },
-        {
             "class": "Engineering Graphics",
             "teacher": "Mrs. Russo",
             "description": "Studnets will master traditional drafting and sketching techniques in addition to learning to use industry-standard CAD (computer-aided design) software. Exploration of ergonomic design, industrial design, and product redesign will also take place throughout the course.",
@@ -86,7 +75,7 @@
                 "5 Credits",
                 "Grades 9-12"
             ],
-            "image": "https://picsum.photos/600/600"
+            "image": "course-imgs/video-editing.jpg"
         },
         {
             "class": "Web Design Pathway Program (WDPP)",
@@ -109,7 +98,7 @@
                 "5 Credits",
                 "Grades 10-12"
             ],
-            "image": "https://picsum.photos/600/600"
+            "image": "course-imgs/wood-working.jpg"
         }
     ],
     "clubs": [
