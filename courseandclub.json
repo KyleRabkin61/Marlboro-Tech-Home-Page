@@ -9,7 +9,7 @@
                 "5 Credits",
                 " Grades 10-12"
             ],
-            "image": "https://picsum.photos/600/600"
+            "image": "course-imgs/compscicoursephoto.jpg"
         },
         {
             "class": "Architecture",
@@ -20,7 +20,7 @@
                 "5 Credits",
                 "Grades 9-12"
             ],
-            "image": "https://picsum.photos/600/600"
+            "image": "course-imgs/architecturecoursephoto.jpg"
         },
         {
             "class": "Engineering Graphics",
@@ -31,7 +31,7 @@
                 "5 Credits",
                 "Grades 9-12"
             ],
-            "image": "https://picsum.photos/600/600"
+            "image": "course-imgs/engineeringcoursephoto.jpg"
         },
         {
             "class": "Graphic Design & Photography",
@@ -42,7 +42,7 @@
                 "5 Credits",
                 "Grades 11-12"
             ],
-            "image": "https://picsum.photos/600/600"
+            "image": "course-imgs/graphicdesigncoursephoto.jpg"
         },
         {
             "class": "Honors Innovation and Design",

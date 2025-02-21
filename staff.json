@@ -9,7 +9,8 @@
             "Adv. Cabinetmaking"
         ],
         "funFact": "He is a big Yankee fan.",
-        "img": "teacher-imgs/mr-dellapietro.JPG"
+        "img": "teacher-imgs/mr-dellapietro.JPG",
+        "alt": "Mr. DellaPietro photo"
     },
     {
         "name": "Mr. Kilgore",
@@ -21,7 +22,8 @@
             "AP Computer Science Principles"
         ],
         "funFact": "He beat up Arnold Schwarzenegger.",
-        "img": "teacher-imgs/mr-kilgore.JPG"
+        "img": "teacher-imgs/mr-kilgore.JPG",
+        "alt": "Mr. Kilgore photo"
     },
     {
         "name": "Mrs. Leonard",
@@ -33,7 +35,8 @@
             "H. Web Design"
         ],
         "funFact": "Her middle name is Mango.",
-        "img": "teacher-imgs/mrs-leonard.JPG"
+        "img": "teacher-imgs/mrs-leonard.JPG",
+        "alt": "Mrs. Leonard photo"
     },
     {
         "name": "Mrs. Ransom",
@@ -45,7 +48,8 @@
             "Introduction to Woodworking"
         ],
         "funFact": "She obtained a Bachelor of Architecture degree from Philadelphia University.",
-        "img": "teacher-imgs/mrs-ransom.JPG"
+        "img": "teacher-imgs/mrs-ransom.JPG",
+        "alt": "Mrs. Ransom photo"
     },
     {
         "name": "Mrs. Russo",
@@ -59,7 +63,8 @@
             "Technological Systems & Design"
         ],
         "funFact": "She is a twin.",
-        "img": "teacher-imgs/mrs-russo.JPG"
+        "img": "teacher-imgs/mrs-russo.JPG",
+        "alt": "Mrs. Russo photo"
     },
     {
         "name": "Mr. Werntz",
@@ -71,6 +76,7 @@
             "Graphic Design and Photography"
         ],
         "funFact": "He used to coach wrestling and was Coach Frankel's coach.",
-        "img": "teacher-imgs/mr-werntz.JPG"
+        "img": "teacher-imgs/mr-werntz.JPG",
+        "alt": "Mr. Werntz photo"
     }
 ]
