@@ -3,41 +3,44 @@
 
 <head>
     <title>Marlboro Tech Ed: The Staff</title>
-    <!-- Required meta tags -->
+    <!-- Required meta tags for character encoding and responsiveness -->
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
 
-    <!-- tab logo -->
+    <!-- Favicon (tab logo) -->
     <link rel="shortcut icon" type="x-icon" href="imgs/tech-ed.png">
 
-    <!-- Bootstrap CSS v5.2.1 -->
+    <!-- Bootstrap CSS v5.2.1 for styling and responsive layout -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
 
-    <!-- css link -->
+    <!-- Custom CSS link for additional styles -->
     <link rel="stylesheet" href="style.css">
 
-    <!-- Vue Framework -->
+    <!-- Vue Framework for dynamic content binding -->
     <script src="https://unpkg.com/vue@3.0.11/dist/vue.global.js"></script>
 
-    <!-- google font links -->
+    <!-- Google Fonts for typography -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
         href="https://fonts.googleapis.com/css2?family=Fira+Sans+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Kaisei+Decol&family=KoHo:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&family=Madimi+One&display=swap"
         rel="stylesheet">
 
-    <!-- fontawesome for footer link -->
+    <!-- Font Awesome for icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
 
 </head>
 
 <body>
+    <!-- Navbar section with navigation links -->
     <nav class="navbar navbar-expand-lg fixed-top">
         <div class="container-fluid">
+            <!-- Brand/logo with link to homepage -->
             <a class="navbar-brand" href="index.html">
                 <img src="imgs/tech-ed.png" alt="Bootstrap" width="85" height="85">
             </a>
+            <!-- Navbar toggle button for small screens -->
             <button class="navbar-toggler collapsed d-flex d-lg-none flex-column justify-content-around" type="button"
                 data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
                 aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -45,17 +48,23 @@
                 <span class="toggler-icon middle-bar"></span>
                 <span class="toggler-icon bottom-bar"></span>
             </button>
+
+            <!-- Navigation links inside collapsible menu -->
             <div class="text-center collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+                    <!-- Link to Home page -->
                     <li class="nav-item">
                         <a class="nav-link" aria-current="page" href="index.html">Home</a>
                     </li>
+                    <!-- Link to Classrooms page -->
                     <li class="nav-item">
                         <a class="nav-link" aria-current="page" href="rooms.html">Classrooms</a>
                     </li>
+                    <!-- Link to Courses and Clubs page -->
                     <li class="nav-item">
                         <a class="nav-link" aria-current="page" href="courses.html">Courses and Clubs</a>
                     </li>
+                    <!-- Active link to Staff page -->
                     <li class="nav-item">
                         <a class="nav-link active" aria-current="page" href="staff.html">Staff</a>
                     </li>
@@ -64,65 +73,78 @@
         </div>
     </nav>
 
+    <!-- Vue app container for dynamic content -->
     <div id="vue_app" class="container mt-5">
 
-        <!-- header -->
+        <!-- Header for the staff page -->
         <div class="row staff-header-row d-flex justify-content-center align-items-center flex-column">
 
+            <!-- Main header title -->
             <div class="staff-header col-12 d-flex justify-content-center align-items-center">
                 <h1 class="text-center staff-header-text">Meet The Staff</h1>
             </div>
+            <!-- Hover instruction section -->
             <div class="staff-hover-section col-12 d-flex flex-column justify-content-center align-items-center">
                 <h1 class="staff-hover-section-text text-center">Hover over the images to learn more!</h1>
             </div>
         </div>
 
-        <!-- staff -->
+        <!-- Staff section with a dynamic list of teachers -->
         <div class="row staff-row d-flex justify-content-center align-items-center">
             <div class="col-12 col-md-6 col-xl-4 my-3 d-flex justify-content-center teacher flex-column"
                 v-for="teacher in staff" :key="teacher.id">
                 <div class="card mx-auto">
-                    <img class="teacher-photo" v-bind:src="teacher.img">
+                    <!-- Teacher photo -->
+                    <img class="teacher-photo" v-bind:src="teacher.img" :alt="teacher.alt">
                     <div class="card-body d-flex justify-content-center align-items-center flex-column">
+                        <!-- Teacher's courses -->
                         <h1 class="teacher-title">Courses:</h1>
-                        <li v-for="(course, courseIndex) in teacher.courses" :key="courseIndex" class="course-text text-center">
+                        <li v-for="(course, courseIndex) in teacher.courses" :key="courseIndex"
+                            class="course-text text-center">
                             {{ course }}
                         </li> <br>
-                        <p class="teacher-years-taught text-center teacher-years">Years taught: {{ teacher.yearsTaught }}</p>
+                        <!-- Teacher's years taught and fun fact -->
+                        <p class="teacher-years-taught text-center teacher-years">Years taught: {{ teacher.yearsTaught
+                            }}</p>
                         <p class="teacher-fun-fact text-center teacher-fun">Fun fact: {{ teacher.funFact }}</p>
-                            
                     </div>
                 </div>
+                <!-- Teacher name and email -->
                 <h1 class="text-center mt-3 teacher-name">{{ teacher.name }}</h1>
                 <p class="teacher-email text-center">{{ teacher.email }}</p>
             </div>
         </div>
+
+        <!-- Example of a specific teacher (Dr. Andreacci) with static data -->
         <div class="row staff-row d-flex justify-content-center align-items-center">
             <div class="col-12 col-md-6 col-xl-4 my-3 d-flex justify-content-center teacher flex-column">
                 <div class="card mx-auto">
+                    <!-- Static image for Dr. Andreacci -->
                     <img class="teacher-photo" id="teacherPhoto" src="teacher-imgs/dr-andreacci.JPG">
                     <div class="card-body d-flex justify-content-center align-items-center flex-column">
-                       <p class="teacher-title"> Advisor </p>
+                        <!-- Teacher's role, years taught, and fun fact -->
+                        <p class="teacher-title"> Advisor </p>
                         <p class="teacher-andre-years text-center">Years taught: <br> 28</p>
                         <p class="teacher-andre-fun text-center">Fun Fact: <br> She loves to go skiing!</p>
                     </div>
                 </div>
+                <!-- Dr. Andreacci's name and email -->
                 <h1 class="text-center mt-3 teacher-name">Dr. Andreacci</h1>
                 <p class="teacher-email text-center">eandreacci@frhsd.com</p>
             </div>
         </div>
     </div>
 
-    <!-- back-to-top here -->
+    <!-- Back-to-top button (scrolls to the top of the page) -->
     <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
 
-    <!--  footer start -->
+    <!-- Footer section with contact information -->
     <footer class="text-white">
         <div class="row g-0 d-flex justify-content-center align-items-center">
             <div class="col-12 col-lg-6 text-center text-lg-start footer-content">
+                <!-- Footer content with Tech-Ed info and links -->
                 <p class="footer-tech-ed">&copy; Tech-Ed Department</p>
                 <a href="https://marlboro.frhsd.com/" target="_blank" class="link">MHS School Website</a>
-
                 <div class="place">
                     <span class="fas fa-map-marker-alt address-icon"></span>
                     <span class="footer-text">95 N Main St, Marlboro Township, NJ 07746</span>
@@ -137,12 +159,13 @@
                 </div>
             </div>
             <div class="col-12 col-lg-6 d-flex justify-content-center justify-content-lg-end">
+                <!-- Footer image -->
                 <img src="imgs/tech-ed.png" class="footer-image img-fluid">
             </div>
         </div>
     </footer>
-    <!--  footer end -->
-    <!-- Bootstrap JavaScript Libraries -->
+
+    <!-- Bootstrap JavaScript Libraries for interactive components -->
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
         integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
         crossorigin="anonymous"></script>
@@ -151,13 +174,13 @@
         integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
         crossorigin="anonymous"></script>
 
-    <!-- script.js -->
+    <!-- Custom JavaScript for the page functionality -->
     <script src="script.js"></script>
 
-    <!-- staff.js -->
+    <!-- Staff-specific JavaScript for dynamic content -->
     <script type="text/javascript" src="staff.js"></script>
 
-    <!-- jquery link -->
+    <!-- jQuery for additional interactivity -->
     <script src="https://code.jquery.com/jquery-3.7.1.js"
         integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
 </body>

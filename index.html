@@ -3,41 +3,44 @@
 
 <head>
     <title>Marlboro Tech Ed: B-Wing</title>
-    <!-- Required meta tags -->
+    <!-- Required meta tags for character set and responsiveness -->
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
 
-    <!-- tab logo -->
+    <!-- Link to the tab logo (favicon) -->
     <link rel="shortcut icon" type="x-icon" href="imgs/tech-ed.png">
 
-    <!-- Bootstrap CSS v5.2.1 -->
+    <!-- Bootstrap CSS v5.2.1 CDN for responsive design and UI components -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
 
-    <!-- css link -->
+    <!-- Link to custom styles (style.css) -->
     <link rel="stylesheet" href="style.css">
 
-    <!-- Vue Framework -->
-	<script src="https://unpkg.com/vue@3.0.11/dist/vue.global.js"></script>
+    <!-- Vue.js framework (for dynamic content) -->
+    <script src="https://unpkg.com/vue@3.0.11/dist/vue.global.js"></script>
 
-    <!-- google font links -->
+    <!-- Google Fonts for typography -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
         href="https://fonts.googleapis.com/css2?family=Fira+Sans+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Kaisei+Decol&family=KoHo:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&family=Madimi+One&display=swap"
         rel="stylesheet">
 
-    <!-- fontawesome for footer link -->
+    <!-- FontAwesome for icons (used in footer) -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
 
 </head>
 
 <body>
+    <!-- Navbar (fixed top navigation bar) -->
     <nav class="navbar navbar-expand-lg fixed-top">
         <div class="container-fluid">
+            <!-- Navbar brand/logo -->
             <a class="navbar-brand" href="index.html">
-                <img src="imgs/tech-ed.png" alt="Bootstrap" width="85" height="85">
+                <img src="imgs/tech-ed.png" alt="Tech Ed logo" width="85" height="85">
             </a>
+            <!-- Hamburger menu for mobile view -->
             <button class="navbar-toggler collapsed d-flex d-lg-none flex-column justify-content-around" type="button"
                 data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
                 aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -45,6 +48,7 @@
                 <span class="toggler-icon middle-bar"></span>
                 <span class="toggler-icon bottom-bar"></span>
             </button>
+            <!-- Navigation links for the website -->
             <div class="text-center collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
                     <li class="nav-item">
@@ -59,18 +63,19 @@
                     <li class="nav-item">
                         <a class="nav-link" aria-current="page" href="staff.html">Staff</a>
                     </li>
-
-
                 </ul>
-
             </div>
         </div>
     </nav>
 
+    <!-- Main content area -->
     <div class="container mt-5">
-        <!-- header -->
+        <!-- Welcome header section -->
         <div class="row d-flex justify-content-center index-header-row">
-            <div class="col-12 index-header d-flex justify-content-center align-items-center flex-column" alt="B-wing">
+            <div class="col-12 index-header d-flex justify-content-center align-items-center flex-column"
+                id="indexHeader">
+                <span class="text-black" id="altText">Image of the B-wing</span>
+                <!-- Alt text if the image fails to load -->
                 <div class="header m-3 d-flex align-items-center">
                     <h1 class="text-center header-title">Welcome to the <br>B-Wing in Marlboro High School</h1>
                 </div>
@@ -78,9 +83,8 @@
             </div>
         </div>
 
-        <!-- info boxes -->
+        <!-- Info boxes section with different content about the B-wing -->
         <div class="row info-row d-flex justify-content-center align-items-center">
-
             <div class="what-image col-12 order-lg-2 col-lg-6" id="what">
             </div>
             <div
@@ -95,7 +99,6 @@
             </div>
         </div>
         <div class="row info-row d-flex justify-content-center align-items-center">
-
             <div class="offer-image col-12 col-lg-6"></div>
             <div class="offer-text col-12 col-lg-6 d-flex flex-column justify-content-center align-items-center">
                 <h1 class="text-center info-title">What does the<br>B-Wing offer?</h1>
@@ -106,7 +109,6 @@
                 <button class="btn" onclick="window.location.href = 'courses.html';">Click here to explore the
                     courses!</button>
             </div>
-
         </div>
         <div class="row info-row d-flex justify-content-center align-items-center">
             <div class="staff-image col-12 order-lg-2 col-lg-6"></div>
@@ -123,10 +125,10 @@
         </div>
     </div>
 
-    <!-- back-to-top here -->
+    <!-- Back to top button -->
     <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
 
-    <!--  footer start -->
+    <!-- Footer section with contact info and links -->
     <footer class="text-white">
         <div class="row g-0 d-flex justify-content-center align-items-center">
             <div class="col-12 col-lg-6 text-center text-lg-start footer-content">
@@ -154,16 +156,16 @@
             </div>
         </div>
     </footer>
-    <!--  footer end -->
-    <!-- Bootstrap JavaScript Libraries -->
+
+    <!-- Bootstrap JavaScript Libraries for interactive features -->
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
         integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
         crossorigin="anonymous"></script>
-
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
         integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
         crossorigin="anonymous"></script>
 
+    <!-- Custom script for the page -->
     <script src="script.js"></script>
 </body>
 

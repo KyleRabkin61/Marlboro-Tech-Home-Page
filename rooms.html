@@ -2,40 +2,41 @@
 <html lang="en">
 
 <head>
+    <!-- Page Title -->
     <title>Marlboro Tech Ed: The Classrooms</title>
 
-    <!-- required meta tags -->
+    <!-- Required meta tags for character encoding and responsive design -->
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
 
-    <!-- tab logo -->
+    <!-- Favicon icon for the tab -->
     <link rel="shortcut icon" type="x-icon" href="imgs/tech-ed.png">
 
-    <!-- bootstrap CSS v5.2.1 -->
+    <!-- Bootstrap CSS (v5.2.1) for styling -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
 
-    <!-- css link -->
+    <!-- External stylesheet -->
     <link rel="stylesheet" href="style.css">
 
-    <!-- Vue Framework -->
+    <!-- Vue.js Framework for dynamic content -->
     <script src="https://unpkg.com/vue@3.0.11/dist/vue.global.js"></script>
 
-    <!-- google font links -->
+    <!-- Google Fonts for custom text styles -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
         href="https://fonts.googleapis.com/css2?family=Fira+Sans+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Kaisei+Decol&family=KoHo:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&family=Madimi+One&display=swap"
         rel="stylesheet">
 
-    <!-- fontawesome for footer link -->
+    <!-- FontAwesome for icons in the footer -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
 
 </head>
 
 <body>
 
-    <!-- navbar -->
+    <!-- Navigation Bar -->
     <nav class="navbar navbar-expand-lg fixed-top">
         <div class="container-fluid">
             <a class="navbar-brand" href="index.html">
@@ -48,6 +49,7 @@
                 <span class="toggler-icon middle-bar"></span>
                 <span class="toggler-icon bottom-bar"></span>
             </button>
+            <!-- Navbar menu items -->
             <div class="text-center collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
                     <li class="nav-item">
@@ -62,42 +64,44 @@
                     <li class="nav-item">
                         <a class="nav-link" aria-current="page" href="staff.html">Staff</a>
                     </li>
-
-
                 </ul>
-
             </div>
         </div>
     </nav>
 
+    <!-- Main Content: Vue.js App Container -->
     <div class="container" id="vue_app">
 
-        <!-- classroom header -->
+        <!-- Classroom Header Section -->
         <div class="row classroom-header-row d-flex justify-content-center align-items-center">
             <div class="classroom-header col-12 d-flex justify-content-center align-items-center">
                 <h1 class="text-center info-title-class">Classrooms & Machinery</h1>
             </div>
         </div>
 
+        <!-- Classroom Rows Section -->
         <div class="row classroom-row">
+            <!-- Loop through rooms to display each classroom's details -->
             <div class="col-12 col-xl-6" v-for="room in rooms" :key="room.id">
 
                 <div class="row my-3 room-row g-0">
+                    <!-- Classroom image and title -->
                     <div class="col-12 col-lg-6 d-flex justify-content-center align-items-center roompic"
                         :style="{ backgroundImage: `url(${room.mainImage})`}">
                         <h1 class="title-heading">{{ room.number }}</h1>
                     </div>
+                    <!-- Classroom description and 'More Pictures' button -->
                     <div
                         class="col-12 col-lg-6 d-flex flex-column justify-content-center align-items-center descriptioncroom">
                         <p class="description text-center p-3">{{ room.description }}</p>
 
-                        <!-- button trigger modal -->
+                        <!-- Button to trigger the modal for more pictures -->
                         <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#exampleModal"
                             @click="selectedRoom = room">
                             More Pictures
                         </button>
 
-                        <!-- modal -->
+                        <!-- Modal to display more images -->
                         <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel">
                             <div class="modal-dialog modal-dialog-centered modal-lg">
                                 <div class="modal-content">
@@ -109,7 +113,7 @@
                                             aria-label="Close"></button>
                                     </div>
                                     <div class="modal-body">
-                                        <!-- Carousel -->
+                                        <!-- Carousel to display images of the selected room -->
                                         <div id="classCarousel" class="carousel slide">
                                             <div class="carousel-indicators">
                                                 <button v-for="(image, index) in selectedRoom?.images" :key="index"
@@ -119,6 +123,7 @@
                                                 </button>
                                             </div>
                                             <div class="carousel-inner">
+                                                <!-- Loop through and display images -->
                                                 <div v-for="(image, index) in selectedRoom?.images" :key="index"
                                                     class="carousel-item c-item" :class="{ 'active': index === 0 }">
                                                     <img :src="image" class="d-block w-100 c-img" alt="Classroom Image">
@@ -149,14 +154,10 @@
         </div>
     </div>
 
-
-
-
-
-    <!-- back-to-top here -->
+    <!-- Button for scrolling to the top -->
     <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
 
-    <!--  footer start -->
+    <!-- Footer Section -->
     <footer class="text-white">
         <div class="row g-0 d-flex justify-content-center align-items-center">
             <div class="col-12 col-lg-6 text-center text-lg-start footer-content">
@@ -180,7 +181,7 @@
             </div>
         </div>
     </footer>
-    <!--  footer end -->
+
     <!-- Bootstrap JavaScript Libraries -->
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
         integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
@@ -190,15 +191,14 @@
         integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
         crossorigin="anonymous"></script>
 
-    <!-- script.js -->
+    <!-- Custom Scripts -->
     <script src="script.js"></script>
-
-    <!-- room.js -->
     <script type="text/javascript" src="rooms.js"></script>
 
-    <!-- jquery link -->
+    <!-- jQuery library -->
     <script src="https://code.jquery.com/jquery-3.7.1.js"
         integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+
 </body>
 
 </html>

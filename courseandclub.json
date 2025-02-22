@@ -9,7 +9,8 @@
                 "5 Credits",
                 " Grades 10-12"
             ],
-            "image": "course-imgs/compscicoursephoto.jpg"
+            "image": "course-imgs/compsci.jpg",
+            "alt": "AI image of computer science."
         },
         {
             "class": "Architecture",
@@ -20,7 +21,8 @@
                 "5 Credits",
                 "Grades 9-12"
             ],
-            "image": "course-imgs/architecturecoursephoto.jpg"
+            "image": "course-imgs/architecture.jpg",
+            "alt": "AI image of architecture."
         },
         {
             "class": "Engineering Graphics",
@@ -31,7 +33,8 @@
                 "5 Credits",
                 "Grades 9-12"
             ],
-            "image": "course-imgs/engineeringcoursephoto.jpg"
+            "image": "course-imgs/engineering.jpg",
+            "alt": "AI image of engineering."
         },
         {
             "class": "Graphic Design & Photography",
@@ -42,7 +45,8 @@
                 "5 Credits",
                 "Grades 11-12"
             ],
-            "image": "course-imgs/graphicdesigncoursephoto.jpg"
+            "image": "course-imgs/graphicdesign.jpg",
+            "alt": "AI image of graphic design."
         },
         {
             "class": "Honors Innovation and Design",
@@ -53,7 +57,8 @@
                 "5 Credits",
                 "Grades 11-12"
             ],
-            "image": "https://picsum.photos/600/600"
+            "image": "course-imgs/innovationdesign.jpg",
+            "alt": "AI image of innovation and design."
         },
         {
             "class": "Technology Systems & Design",
@@ -64,7 +69,8 @@
                 "5 Credits",
                 "Grades 9-12"
             ],
-            "image": "https://picsum.photos/600/600"
+            "image": "course-imgs/techsystems.jpg",
+            "alt": "AI image of technology systems."
         },
         {
             "class": "Video Editing",
@@ -75,7 +81,8 @@
                 "5 Credits",
                 "Grades 9-12"
             ],
-            "image": "course-imgs/video-editing.jpg"
+            "image": "course-imgs/videoediting.jpg",
+            "alt": "AI image of video editing."
         },
         {
             "class": "Web Design Pathway Program (WDPP)",
@@ -87,7 +94,8 @@
                 "Grades 10-12",
                 "3 NJIT Credits"
             ],
-            "image": "https://picsum.photos/600/600"
+            "image": "course-imgs/webdesign.jpg",
+            "alt": "AI image of web design."
         },
         {
             "class": "Woodworking & Cabinetmaking",
@@ -98,42 +106,40 @@
                 "5 Credits",
                 "Grades 10-12"
             ],
-            "image": "course-imgs/wood-working.jpg"
+            "image": "course-imgs/woodworking.jpg",
+            "alt": "AI image of wood working."
         }
     ],
     "clubs": [
         {
             "class": "Technology Student Association",
-            "teacher": 
-                "Mr. Werntz",
-            "description": "Students are part of an organizaton where they can compete in various exciting competitions ranging rom technology challenges to structural engineering.",
+            "teacher": "Mr. Werntz",
+            "description": "Students are part of an organizaton where they can compete in various exciting competitions ranging from technology challenges to structural engineering.",
             "requirements": [
                 "See more information on TSA website"
-               
             ],
-            "image": "https://picsum.photos/600/700"
+            "image": "course-imgs/tsa.jpg",
+            "alt": "AI image of tsa."
         },
         {
             "class": "Mustang Morning Show",
-            "teacher": 
-                "Mr. Werntz",
+            "teacher": "Mr. Werntz",
             "description": "The Mustang Morning Show is aired on the last Friday of every month. It recaps the month with fun games, activites, news, and sports.",
             "requirements": [
                 "See more information on Mustang Morning Show website"
-               
             ],
-            "image": "https://picsum.photos/600/700"
+            "image": "course-imgs/mustangmorningshow.jpg",
+            "alt": "AI image of the mustang morning show."
         },
         {
             "class": "Coffee and Coding",
-            "teacher":
-                "Mr. Kilgore and Mrs. Leonard",
+            "teacher": "Mr. Kilgore and Mrs. Leonard",
             "description": "Coding and Coffee occurs every friday with tutoring and extra help available in the morning. Occasionally, food and snacks will be offered along with building deeper connections through coding.",
             "requirements": [
                 "See more information on Coffee & Coding website"
-               
             ],
-            "image": "https://picsum.photos/600/700"
+            "image": "course-imgs/codeandcoffee.jpg",
+            "alt": "AI image of coffee and coding."
         }
     ]
 }

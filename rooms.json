@@ -4,22 +4,14 @@
         "description": "Offers high quality desktops that have editing software and access to Adobe Premiere. Greenscreen with studio lighting is also available for student access aswell as Digital Camera Equipment.",
         "mainImage": "classroom-imgs/B106-1.png",
         "images": [
-            "classroom-imgs/B106-1.png",
+            "classroom-imgs/B10-1.png",
             "classroom-imgs/B106-2.png",
             "classroom-imgs/B106-3.png",
             "classroom-imgs/B106-computer-row.png",
             "classroom-imgs/B106-studio-1.png",
             "classroom-imgs/B106-studio-2.png"
         ],
-        "mainAlt": "B106 classroom",
-        "alt": [
-            "B106 classroom",
-            "B106 classroom",
-            "B106 classroom",
-            "B106 computer Row",
-            "B106 studio room",
-            "B106 studio room"
-        ]
+        "mainAlt": "B106 classroom"
     },
     {
         "number": "B107",
@@ -33,15 +25,7 @@
             "classroom-imgs/B107-large-format-plotter.png",
             "classroom-imgs/B107-lasercutter.png"
         ],
-        "mainAlt": "B107 classroom",
-        "alt": [
-            "B107 classroom",
-            "B107 classroom",
-            "B107 classroom",
-            "B107 3D printer",
-            "B107 format plotter",
-            "B107 laser cutter"
-        ]
+        "mainAlt": "B107 classroom"
     },
     {
         "number": "B108",
@@ -55,15 +39,7 @@
             "classroom-imgs/B108-band-saw.png",
             "classroom-imgs/B108-3D-1.png"
         ],
-        "mainAlt": "B108 classroom",
-        "alt": [
-            "B108 classroom",
-            "B108 classroom",
-            "B108 classroom",
-            "B108 3D printer",
-            "B108 band saw",
-            "B108 3D printer"
-        ]
+        "mainAlt": "B108 classroom"
     },
     {
         "number": "B109",
@@ -77,15 +53,7 @@
             "classroom-imgs/B109-belt-sander.png",
             "classroom-imgs/B109-table-saw.png"
         ],
-        "mainAlt": "B109 classroom",
-        "alt": [
-            "B109 classroom",
-            "B109 classroom",
-            "B109 miter saw",
-            "B109 sanding table",
-            "B109 belt sander",
-            "B109 table saw"
-        ]
+        "mainAlt": "B109 classroom"
     },
     {
         "number": "B110",
@@ -99,15 +67,7 @@
             "classroom-imgs/B110-backroom-2.png",
             "classroom-imgs/B110-backroom-photowall.png"
         ],
-        "mainAlt": "B110 classroom",
-        "alt": [
-            "B110 classroom",
-            "B110 computer row",
-            "B110 computer ",
-            "B110 backroom",
-            "B110 backroom",
-            "B110 backroom photo wall"
-        ]
+        "mainAlt": "B110 classroom"
     },
     {
         "number": "B111",
@@ -121,14 +81,6 @@
             "classroom-imgs/B111-computer.png",
             "classroom-imgs/B111-printer.png"
         ],
-        "mainAlt": "B111 classroom",
-        "alt": [
-            "B111 classroom",
-            "B111 classroom",
-            "B111 classroom",
-            "B111 classroom",
-            "B111 computer",
-            "B111 printer"
-        ]
+        "mainAlt": "B111 classroom"
     }
 ]
