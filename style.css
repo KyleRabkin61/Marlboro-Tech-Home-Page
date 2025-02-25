@@ -333,6 +333,52 @@ screen sizes:
     object-fit: cover;
 }
 
+.carousel-control-prev {
+    opacity: 0.9;
+}
+
+.carousel-control-prev:hover {
+    opacity: 0.9;
+}
+
+.carousel-control-next {
+    opacity: 0.9;
+}
+
+.carousel-control-next:hover {
+    opacity: 0.9;
+}
+
+.carousel-control-prev-icon {
+    background-color: #113F75;
+    opacity: 0.75;
+    border-radius: 100%;
+    transition: 0.35s;
+    width: 50px;
+    height: 50px;
+}
+
+.carousel-control-prev-icon:hover {
+    opacity: 1;
+    border-radius: 100%;
+    transition: 0.35s;
+}
+
+.carousel-control-next-icon {
+    background-color: #113F75;
+    opacity: 0.75;
+    border-radius: 100%;
+    transition: 0.35s;
+    width: 50px;
+    height: 50px;
+}
+
+.carousel-control-next-icon:hover {
+    opacity: 1;
+    border-radius: 100%;
+    transition: 0.35s;
+}
+
 /* courses page css */
 
 .course-header-row {
