@@ -133,7 +133,7 @@ screen sizes:
 .index-header {
     width: clamp(600px, 70vw, 1200px);
     height: 70vh;
-    background: url("imgs/index-header.jpg");
+    background: url("imgs/index-header.png");
     background-position: center center;
     background-size: cover;
     margin-top: 120px;
@@ -163,7 +163,7 @@ screen sizes:
 
 .what-image {
     height: 400px;
-    width: clamp(600px, 70vw, 900px);
+    width: clamp(600px, 65vw, 900px);
     background: url(classroom-imgs/hallway-2.png);
     background-repeat: no-repeat;
     background-size: cover;
@@ -186,7 +186,7 @@ screen sizes:
 .offer-image {
     height: 400px;
     width: clamp(600px, 70vw, 900px);
-    background: url(imgs/index-course.jpg);
+    background: url(imgs/index-course.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
@@ -208,7 +208,7 @@ screen sizes:
 .staff-image {
     height: 400px;
     width: clamp(600px, 70vw, 900px);
-    background: url(imgs/index-staff.jpg);
+    background: url(imgs/index-staff.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
@@ -524,6 +524,7 @@ screen sizes:
     font-size: 22px;
     font-weight: 700;
     font-family: "KoHo", serif;
+    color: #113F75;
 }
 
 .staff-row {
